@@ -30,7 +30,7 @@ const TedX = () => {
   }, []);
 
   return (
-    <div className="ted-page min-h-screen">
+    <div className="ted-page min-h-screen ">
       <HeaderImg />
       <About />
       <div className="max-w-screen mx-auto  ">

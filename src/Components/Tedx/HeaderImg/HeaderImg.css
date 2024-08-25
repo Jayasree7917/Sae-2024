@@ -50,6 +50,7 @@
   }
 
   .slide-image {
+    object-position: center;
     object-fit: contain; /* Ensure the image still covers the container */
   }
 
