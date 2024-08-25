@@ -1,26 +1,6 @@
-body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0;
-  font-family: 'Arial', sans-serif;
-}
-
-.organisers-container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
-  width: 90%;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 20px 10px;
-  box-sizing: border-box;
-  justify-content: center;
-}
-
 .ted-image-card {
   width: 100%;
-  height: 370px; 
+  height: 370px;
   position: relative;
   transition: transform 0.4s ease-in;
   overflow: hidden;
@@ -33,60 +13,32 @@ body {
 .ted-image-card img {
   width: 100%;
   height: 100%;
-  object-fit: cover; 
-  object-position: top; 
-  transition: transform 0.4s ease-in;
+  object-fit: cover;
+  object-position: top;
+  transition: transform 0.6s ease-in;
   border-radius: 10px;
 }
 
-.ted-image-card img:hover {
+.ted-image-card:hover img {
   transform: scale(1.2);
 }
 
-.ted-image-card:before,
-.ted-image-card:after {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
+.ted-image-card::after {
   content: attr(data-name);
-  transform: translateY(100%);
-  font-size: 20px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 80px; /* Increased height */
+  background-color: rgba(0, 0, 0, 0.5);
   color: #fff;
   display: flex;
   justify-content: center;
-  padding-top: 35px;
-  background-color: rgba(0, 0, 0, 0.5);
-  z-index: 1;
-  transition: transform 0.9s ease-in;
-  box-sizing: border-box;
+  align-items: center;
+  transform: translateY(100%);
+  transition: transform 0.4s ease-in;
 }
 
-.ted-image-card:hover::before,
 .ted-image-card:hover::after {
-  transform: translateY(70%);
-}
-
-.last-card {
-  justify-self: center;
-}
-
-@media only screen and (max-width: 1050px) {
-  .organisers-container {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 15px;
-  }
-}
-
-@media only screen and (max-width: 770px) {
-  .organisers-container {
-    grid-template-columns: 1fr;
-    gap: 10px;
-  }
-
-  .ted-image-card:before,
-  .ted-image-card:after {
-    font-size: 18px;
-  }
+  transform: translateY(0);
 }

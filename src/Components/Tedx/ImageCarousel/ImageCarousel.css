@@ -1,4 +1,13 @@
 .animate-fadeIn {
-    animation: fadeIn 0.8s ease-out forwards;
+  animation: fadeIn 0.8s ease-out forwards;
+  opacity: 1 !important; /* Ensure opacity is set correctly after animation */
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
   }
-  
+  to {
+    opacity: 1;
+  }
+}

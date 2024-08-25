@@ -5,7 +5,7 @@ import Organisers from './Organisers/Organisers';
 import ImageCarousel from './ImageCarousel/ImageCarousel';
 // import Navbar from './Navbar/Navbar';  
 import About from './About/About';
-import './TedX.css';
+import './TedX.css'
 
 const TedX = () => {
   useEffect(() => {
@@ -30,18 +30,20 @@ const TedX = () => {
   }, []);
 
   return (
-    <div className="fullscreen-container">
-      <HeaderImg/>
-      <About/>
-      <div className="max-w-screen mx-auto p-4">
-        <ImageCarousel/>
+    <div className="ted-page min-h-screen">
+      <HeaderImg />
+      <About />
+      <div className="max-w-screen mx-auto p-4 ">
+        <ImageCarousel />
+
       </div>
       <div className="max-w-screen mx-auto p-4">
+    
         <h1 className="text-5xl font-bold text-custom-red text-center underline-red">Speakers</h1>
-        <Speakers/>
+        <Speakers />
  
-        <h1 className="text-5xl font-bold text-custom-red text-center mb-6 underline-red">Organisers</h1>
-        <Organisers/>
+        <h1 className="text-5xl font-bold text-custom-red text-center mb-8 pt-5 underline-red">Organisers</h1>
+        <Organisers />
       </div>
     </div>
   );

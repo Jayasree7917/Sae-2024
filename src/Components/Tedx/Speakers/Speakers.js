@@ -58,7 +58,7 @@ const Speakers = () => {
             <div className="ted-imgBx">
               <img src={speaker.imgSrc} alt={speaker.name} />
             </div>
-            <div className="ted-details text-xl font-extrabold">
+            <div className="ted-details">
               <h2>{speaker.name}<br /><span>{speaker.role}</span></h2>
             </div>
           </div>

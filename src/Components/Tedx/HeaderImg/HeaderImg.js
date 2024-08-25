@@ -33,19 +33,19 @@ const HeaderImg = () => {
   };
 
   return (
-    <div className="ted-relative1">
+    <div className="header-img-container">
       {images.map((src, index) => (
         <img
           key={index}
           src={src}
           alt={`Slide ${index}`}
-          className={`absolute inset-0 object-cover transition-opacity duration-1000 ${index === current ? 'opacity-100' : 'opacity-0'}`}
+          className={`slide-image ${index === current ? 'opacity-100' : 'opacity-0'}`}
         />
       ))}
       {clipPaths.map((clipPath, index) => (
         <div
           key={index}
-          className={`clipPath ${index === current ? clipPath : ''}`}
+          className={`clip-path ${index === current ? clipPath : ''}`}
         />
       ))}
     </div>

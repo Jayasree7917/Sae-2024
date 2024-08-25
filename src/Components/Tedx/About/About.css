@@ -10,11 +10,9 @@
     transition: transform 1.5s ease-out, opacity 1.5s ease-out;
   }
   
-  
   .slide-in-left.active,
   .slide-in-right.active {
     opacity: 1;
     transform: translateX(0);
   }
-  
   

@@ -4,9 +4,14 @@
     text-decoration-thickness: 5px; 
     text-underline-offset: 8px; 
   }
-/* Add this to your TedX.css file */
-.fullscreen-container {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh; /* Ensures the container takes at least the full viewport height */
+  /* TedX.css */
+
+.ted-page {
+    width: 100%; /* Ensure full width */
+    min-height: 100vh; /* Ensure it covers the full viewport height */
+    overflow-x: hidden; /* Prevent horizontal scroll */
+  }
+  .text-custom-red {
+    --tw-text-opacity: 1;
+    color: rgb(255 0 0 / var(--tw-text-opacity)) /* #ff0000 */;
 }

@@ -457,8 +457,8 @@
     height: 900px;
     margin-left: -125px;
     margin-top: -125px;
-    background-image: url('../../images/apurba1.jpeg'); 
-    background-size: contain; 
+    background-image: url('./apurba1.jpeg'); 
+    background-size: contain;
     background-position: center; 
     background-repeat: no-repeat; 
     border-radius: 30%; 
@@ -470,7 +470,7 @@
     height: 900px;
     margin-left: -125px;
     margin-top: -125px;
-    background-image: url('../../images/niloptal1.jpeg'); 
+    background-image: url('./niloptal1.jpeg'); 
     background-size: contain;
     background-position: center; 
     background-repeat: no-repeat; 
@@ -483,7 +483,7 @@
     height: 900px;
     margin-left: -125px;
     margin-top: -125px;
-    background-image: url('../../images/tapas1.jpeg');
+    background-image: url('./tapas1.jpeg');
     background-size: contain; 
     background-position: center; 
     background-repeat: no-repeat; 

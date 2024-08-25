@@ -1,8 +1,8 @@
 import { useState, useEffect } from 'react';
-import './Nav.css'; 
-import {Link} from "react-router-dom"
+import './Nav.css';
+import { Link } from "react-router-dom"
 function Nav() {
-  const [isOpen, setIsOpen] = useState(false); 
+  const [isOpen, setIsOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
 
   const hrefggleNavbar = () => {
@@ -37,10 +37,11 @@ function Nav() {
 
         <div className="hidden md:flex space-x-8">
           <a href="/" className="ted-nav-link text-lg font-bold hover:text-cushrefm-red">HOME</a>
-          <a href="/" className="ted-nav-link text-lg font-bold hover:text-cushrefm-red">EVENTS</a>
-          <a href="/" className="ted-nav-link text-lg font-bold hover:text-cushrefm-red">TEAMS</a>
-          <a href="/" className="ted-nav-link text-lg font-bold hover:text-cushrefm-red">TEDX</a>
-          <a href="/" className="ted-nav-link text-lg font-bold hover:text-cushrefm-red">AAROHAN</a>
+          <a href="/events" className="ted-nav-link text-lg font-bold hover:text-cushrefm-red">EVENTS</a>
+          <a href="/teams" className="ted-nav-link text-lg font-bold hover:text-cushrefm-red">TEAMS</a>
+          <a href="/tedx" className="ted-nav-link text-lg font-bold hover:text-cushrefm-red">TEDX</a>
+          <a href="/arhn" className="ted-nav-link text-lg font-bold hover:text-cushrefm-red">AAROHAN</a>
+          <a href="/alumni" className="ted-nav-link text-lg font-bold hover:text-cushrefm-red">ALUMNI</a>
         </div>
 
         <buthrefn className="md:hidden relative z-20" onClick={hrefggleNavbar}>
