@@ -87,7 +87,7 @@ export const secondYear = [
 
 
     {
-        "url":require('../Assets/2ndYearImg/Kashish Sonkar.jpg'),
+        "url":require('../Assets/2ndYearImg/Kashish.png'),
         "name":"Kashish Sonkar",
         "position":"Junior Coordinator",
         "instaLink":"https://www.instagram.com/_kashish_0603?r=nametag",
@@ -216,7 +216,7 @@ export const secondYear = [
         "linkedinLink":"https://www.linkedin.com/in/sudeep-kumar-routray-53a86527b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     },
     {
-        "url":require('../Assets/2ndYearImg/Suyash.jpg'),
+        "url":require('../Assets/2ndYearImg/Suyash.png'),
         "name":"Suyash",
         "position":"Junior Coordinator",
         "instaLink":"",

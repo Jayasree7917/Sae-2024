@@ -7,6 +7,7 @@ import Teams from "./Components/Team/Teams.js";
 import Nav from "./Components/Navbar/Nav.js";
 import TedX from "./Components/Tedx/TedX.jsx";
 import Footer from "./Components/Footer/Footer.jsx"
+import Home from "./Components/Home/HomePage.jsx"
 
 import './App.css';
 
@@ -17,7 +18,7 @@ function App() {
         <Nav />
         <div className="pt-24 min-h-screen">
           <Routes>
-            <Route path="/" element={<Events />} />
+            <Route path="/" element={<Home />} />
             <Route path="/events" element={<Events />} />
             <Route path="/teams" element={<Teams />} />
             <Route path="/arhn" element={<Aarohan />} />
@@ -25,7 +26,7 @@ function App() {
             <Route path="/alumni" element={<Alumni />} />
           </Routes>
         </div>
-        <Footer/>
+        <Footer />
       </div>
     </Router>
   );
