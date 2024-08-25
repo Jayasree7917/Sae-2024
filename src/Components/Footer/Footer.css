@@ -611,3 +611,13 @@
             justify-content: center; 
         }
     }
+    .fcopy-right-sec {
+        background: #000;
+        color: #fff;
+        padding: .8rem;
+        text-align: center;
+    }
+    .fcopy-right-sec a {
+        color: #ee6969;
+        font-weight: 500;
+    }

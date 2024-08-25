@@ -184,6 +184,13 @@ const Footer = () => {
                             </div>
 
                         </footer>
+                        { <section id="fcopy-right">
+       
+       <div className="fcopy-right-sec">Made By SAE-Dev Team &copy;
+        2024  <Link to="/">  SAE </Link>. All right reserved. 
+       </div>
+
+     </section> }
     </div>
   )
 }
