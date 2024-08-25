@@ -1,11 +1,10 @@
-
-* {
+/* * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-}
+} */
 
-body {
+/* body {
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
   background-color: var(--body-color);
@@ -14,31 +13,35 @@ body {
   display: flex;
   flex-direction: column;
   padding: 0;
-}
+  position: relative;
+} */
 
-.homhome-container {
+.home-container {
   overflow-x: hidden;
   position: relative;
-  height: auto;
+  height: 100%vh;
   background-attachment: fixed;
   display: flex;
   text-align: center;
   flex-direction: column;
-  justify-content: flex-start; 
+  justify-content: flex-start;
   align-items: center;
   transform: scale(1);
   transition: transform 0.5s ease;
-  background: linear-gradient(135deg, rgb(16,16,17), rgb(15, 14, 14));
+  background: linear-gradient(135deg, rgb(16, 16, 17), rgb(15, 14, 14));
   background-size: 200% 200%;
-  padding-top: 100px;
+
 }
 
 
 @keyframes fadeHeading {
-  0%, 100% {
+
+  0%,
+  100% {
     opacity: 0;
     transform: translateY(20px);
   }
+
   50% {
     opacity: 1;
     transform: translateY(0);
@@ -46,7 +49,7 @@ body {
 }
 
 
-.homhome-content {
+.home-content {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -62,37 +65,38 @@ body {
 
 .homheading {
   z-index: 1;
-  width: 100%; 
+  width: 100%;
   text-align: center;
-  margin: 0; 
-  padding: 0; 
-  word-wrap: break-word; /* Break long words to fit within the container */
-  overflow-wrap: break-word; 
+  margin: 0;
+  padding: 0;
+  word-wrap: break-word;
+  /* Break long words to fit within the container */
+  overflow-wrap: break-word;
 }
 
 .homheading h1 {
-  font-size: 3.3vw; 
+  font-size: 3.3vw;
   font-family: 'Poppins', sans-serif;
-  color: rgb(255,0,0);
+  color: rgb(255, 0, 0);
   margin: 0;
   padding: 0;
   overflow: hidden;
   white-space: nowrap;
   animation: typing 4s steps(40, end), blink 0.75s step-end infinite;
   margin-bottom: 20px;
-  margin-top: 0px; 
+  margin-top: 0px;
 }
 
 @media (max-width: 768px) {
   .homheading h1 {
-    font-size: 4vw; 
+    font-size: 4vw;
   }
 }
 
 .homanimated-line {
-  width: 80%; 
-  height: 2px; 
-  margin: 40px auto; 
+  width: 80%;
+  height: 2px;
+  margin: 40px auto;
   background: linear-gradient(90deg, rgba(255, 0, 0, 0) 0%, rgba(255, 0, 0, 1) 50%, rgba(255, 0, 0, 0) 100%);
   background-size: 200% 100%;
   animation: slide 2s ease-in-out infinite;
@@ -102,6 +106,7 @@ body {
   0% {
     background-position: 200% 0;
   }
+
   100% {
     background-position: -200% 0;
   }
@@ -111,34 +116,35 @@ body {
 .homheading p {
   font-size: 1.6rem;
   color: #b8bec4;
-  line-height: 1.5; 
+  line-height: 1.5;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   text-align: center;
-  width: 100vw; 
+  width: 100vw;
   box-sizing: border-box;
   max-width: 700px;
-  margin: 10px auto; 
+  margin: 10px auto;
 }
 
 @media (max-width: 480px) {
   .homheading h1 {
-    font-size: 15vw; 
+    font-size: 15vw;
   }
+
   .homheading p {
     font-size: 21px;
     white-space: normal;
-    word-break: break-word; 
-    overflow-wrap: break-word; 
+    word-break: break-word;
+    overflow-wrap: break-word;
   }
 }
-  
+
 
 
 .homsubheading {
-  width: 100%; 
+  width: 100%;
   text-align: center;
-  margin: 0; 
-  padding: 0; 
+  margin: 0;
+  padding: 0;
 }
 
 .homsubheading h2 {
@@ -148,31 +154,32 @@ body {
   margin: 0;
   padding: 0;
   margin-bottom: 20px;
-  margin-top: 0px; 
+  margin-top: 0px;
 }
 
 .homsubheading p {
   font-size: 1.4rem;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   color: #b8bec4;
-  line-height: 1.5; 
+  line-height: 1.5;
   text-align: center;
-  width: 90%; 
+  width: 90%;
   max-width: 700px;
-  margin: 10px auto; 
+  margin: 10px auto;
 }
 
-@media (max-width: 480px){
-  .homsubheading p{
+@media (max-width: 480px) {
+  .homsubheading p {
     font-size: 20px;
   }
 
 }
 
-.homcard-container, .homboxes {
+.homcard-container,
+.homboxes {
   display: flex;
   flex-wrap: wrap;
-  gap:0;
+  gap: 0;
   justify-content: center;
 }
 
@@ -180,7 +187,7 @@ body {
   width: 300px;
   height: 400px;
   overflow: hidden;
-  margin: 50px; 
+  margin: 50px;
   perspective: 1000px;
   background: linear-gradient(135deg, rgb(43, 10, 10), rgb(255, 100, 100));
   border-radius: 1rem 1rem 11rem 11rem;
@@ -199,7 +206,8 @@ body {
   border-radius: 10px;
 }
 
-.homfront, .homback {
+.homfront,
+.homback {
   background-color: #151515;
   position: absolute;
   width: 100%;
@@ -207,8 +215,8 @@ body {
   backface-visibility: hidden;
   border-radius: 10px;
   overflow: hidden;
-  margin: 0; 
-  padding: 0; 
+  margin: 0;
+  padding: 0;
 }
 
 .homback {
@@ -221,8 +229,8 @@ body {
   position: absolute;
   content: ' ';
   display: block;
-  width: 200px; 
-  height: 200%; 
+  width: 200px;
+  height: 200%;
   animation: rotation_481 5000ms infinite linear;
 }
 
@@ -263,12 +271,12 @@ body {
 
 .homfront .homfront-content {
   position: absolute;
-  width: 98%; 
+  width: 98%;
   height: 100%;
-  padding: 11px; 
+  padding: 11px;
   display: flex;
   flex-direction: row;
-  align-items: flex-start; 
+  align-items: flex-start;
   text-wrap: pretty;
   line-height: 2;
   word-wrap: break-word;
@@ -279,8 +287,8 @@ body {
   line-height: 1.4;
   font-family: 'Times New Roman', Times, serif;
   word-wrap: break-word;
-  word-break: break-word; 
-  hyphens: auto; 
+  word-break: break-word;
+  hyphens: auto;
 }
 
 .homtitle-2 {
@@ -288,8 +296,8 @@ body {
   line-height: 1.4;
   font-family: 'Times New Roman', Times, serif;
   word-wrap: break-word;
-  word-break: break-word; 
-  hyphens: auto; 
+  word-break: break-word;
+  hyphens: auto;
 }
 
 .homtitle-3 {
@@ -297,8 +305,8 @@ body {
   line-height: 1.4;
   font-family: 'Times New Roman', Times, serif;
   word-wrap: break-word;
-  word-break: break-word; 
-  hyphens: auto; 
+  word-break: break-word;
+  hyphens: auto;
 }
 
 @media (max-width: 480px) {
@@ -306,6 +314,7 @@ body {
     height: 400vh;
     background: linear-gradient(135deg, #151719, #151719);
   }
+
   .homcard {
     width: 90%;
     height: auto;
@@ -320,7 +329,7 @@ body {
   }
 
   .homtitle-1 {
-    font-size: 14.5px;
+    font-size: 14px;
   }
 
   .homtitle-2 {
@@ -328,7 +337,7 @@ body {
   }
 
   .homtitle-3 {
-    font-size: 14.5px;
+    font-size: 13.5px;
   }
 }
 
@@ -337,6 +346,7 @@ body {
     height: 280vh;
     background: linear-gradient(135deg, #151719, #151719);
   }
+
   .homcard {
     width: 250px;
     height: 350px;
@@ -345,6 +355,7 @@ body {
   .homtitle {
     font-size: 12px;
   }
+
   .homtitle-1 {
     font-size: 13px;
   }
@@ -354,7 +365,7 @@ body {
   }
 
   .homtitle-3 {
-    font-size: 15px;
+    font-size: 14.3px;
   }
 }
 
@@ -362,31 +373,47 @@ body {
   0% {
     background-position: 0% 0%;
   }
+
   50% {
     background-position: 100% 100%;
   }
+
   100% {
     background-position: 0% 0%;
   }
 }
 
 @keyframes typing {
-  from { width: 0; }
-  to { width: 100%; }
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 100%;
+  }
 }
 
 @keyframes blink {
-  from, to { border-color: transparent; }
-  50% { border-color: #fff; }
+
+  from,
+  to {
+    border-color: transparent;
+  }
+
+  50% {
+    border-color: #fff;
+  }
 }
 
 @keyframes floating {
   0% {
     transform: translateY(0);
   }
+
   50% {
     transform: translateY(-10px);
   }
+
   100% {
     transform: translateY(0);
   }
@@ -396,6 +423,7 @@ body {
   0% {
     background-position: 200% 0;
   }
+
   100% {
     background-position: -200% 0;
   }
@@ -405,16 +433,17 @@ body {
   0% {
     transform: rotateZ(0deg);
   }
+
   100% {
     transform: rotateZ(360deg);
   }
 }
 
 .homprops-heading {
-  width: 100%; 
+  width: 100%;
   text-align: center;
   margin: 0;
-  padding: 0; 
+  padding: 0;
 }
 
 .homprops-heading h1 {
@@ -423,16 +452,16 @@ body {
   margin: 0;
   padding: 0;
   margin-bottom: 20px;
-  margin-top: 0px; 
+  margin-top: 0px;
 }
 
 
 .homhi-container {
   display: flex;
-  flex-wrap: wrap; 
-  gap: 80px; 
-  justify-content: center; 
-  padding: 40px; 
+  flex-wrap: wrap;
+  gap: 80px;
+  justify-content: center;
+  padding: 40px;
 }
 
 .homhi {
@@ -451,17 +480,18 @@ body {
   align-items: center;
   justify-content: center;
 }
+
 .homhi-photo-apurba {
   transform: scale(0.3) translate(220px, 230px);
   width: 600px;
   height: 900px;
   margin-left: -125px;
   margin-top: -125px;
-  background-image: url('../Home//images/apurba1.jpeg'); 
+  background-image: url('../Home/images/apurba1.jpeg');
   background-size: contain;
-  background-position: center; 
-  background-repeat: no-repeat; 
-  border-radius: 30%; 
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 30%;
 }
 
 .homhi-photo-niloptal {
@@ -470,10 +500,10 @@ body {
   height: 900px;
   margin-left: -125px;
   margin-top: -125px;
-  background-image: url('../Home/images/niloptal1.jpeg'); 
+  background-image: url('../Home//images/niloptal1.jpeg');
   background-size: contain;
-  background-position: center; 
-  background-repeat: no-repeat; 
+  background-position: center;
+  background-repeat: no-repeat;
   border-radius: 30%;
 }
 
@@ -484,10 +514,10 @@ body {
   margin-left: -125px;
   margin-top: -125px;
   background-image: url('../Home/images/tapas1.jpeg');
-  background-size: contain; 
-  background-position: center; 
-  background-repeat: no-repeat; 
-  border-radius: 30%; 
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 30%;
 }
 
 
@@ -501,31 +531,31 @@ body {
 .homhi-title {
   text-align: center;
   color: rgb(230, 17, 17);
-  font-weight:bold;
+  font-weight: bold;
   font-size: 25px;
   font-weight: 400;
-  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .homhi-title span {
   color: #b8bec4;
   font-size: 21.5px;
-  font-family:Georgia, 'Times New Roman', Times, serif;
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .homprops-title {
-    padding: 10px;
-    margin-top: 40px;
-    font-size: 1.2em;
-    color: #333;
-    text-align: center;
+  padding: 10px;
+  margin-top: 40px;
+  font-size: 1.2em;
+  color: #333;
+  text-align: center;
 }
 
 @media (max-width: 480px) {
   .home-container {
-    height: auto; 
+    height: auto;
     background: linear-gradient(135deg, #151719, #151719);
-    padding-top: 50px; 
+    padding-top: 50px;
   }
 }
 
@@ -550,7 +580,7 @@ body {
 
 .homabout-sae {
   text-align: left;
-  max-width: 50%; 
+  max-width: 50%;
   padding: 2em;
 }
 
@@ -558,7 +588,7 @@ body {
   font-family: 'Poppins', sans-serif;
   color: rgb(235, 8, 8);
   font-size: 3.5rem;
-  text-shadow: 
+  text-shadow:
     1px 1px 0 rgb(0, 0, 0),
     2px 2px 0 rgb(0, 0, 0),
     2px 2px 0 rgb(211, 21, 21),
@@ -569,11 +599,11 @@ body {
 
 .homabout-sae h1::before {
   position: absolute;
-  top: 5px; 
-  left: 5px; 
+  top: 5px;
+  left: 5px;
   color: #000;
-  z-index: -1; 
-  text-shadow: none; 
+  z-index: -1;
+  text-shadow: none;
 }
 
 .homabout-sae p {
@@ -584,7 +614,7 @@ body {
   line-height: 1.5;
 }
 
-.homabout span{
+.homabout span {
   color: #e23024;
   font-size: 31px;
 }
@@ -594,6 +624,7 @@ body {
     transform: translateX(100%);
     opacity: 0;
   }
+
   to {
     transform: translateX(0);
     opacity: 1;
@@ -604,6 +635,7 @@ body {
   from {
     opacity: 0;
   }
+
   to {
     opacity: 1;
   }
@@ -611,29 +643,29 @@ body {
 
 @media (max-width: 480px) {
   .homabout {
-    flex-direction: column; 
-    padding: 2em; 
+    flex-direction: column;
+    padding: 2em;
   }
 
   .homabout-content {
-    flex-direction: column; 
-    justify-content: center; 
+    flex-direction: column;
+    justify-content: center;
   }
 
   .homabout-sae {
-    max-width: 100%; 
-    padding: 1em; 
-    text-align: center; 
+    max-width: 100%;
+    padding: 1em;
+    text-align: center;
   }
 
   .homabout-sae h1 {
-    font-size: 3rem; 
-    text-shadow: none; 
+    font-size: 3rem;
+    text-shadow: none;
   }
 
   .homabout-sae p {
-    margin: 10px; 
-    font-size: 1.3rem; 
+    margin: 10px;
+    font-size: 1.3rem;
   }
 }
 
@@ -653,7 +685,7 @@ body {
 
 .homhlo-sae {
   text-align: center;
-  max-width: 500%; 
+  max-width: 500%;
   padding: 2em;
 }
 
@@ -661,7 +693,7 @@ body {
   font-family: 'Poppins', sans-serif;
   color: rgb(235, 21, 21);
   font-size: 3.5rem;
-  text-shadow: 
+  text-shadow:
     1px 1px 0 rgb(0, 0, 0),
     2px 2px 0 rgb(0, 0, 0),
     2px 2px 0 rgb(148, 31, 31),
@@ -674,11 +706,11 @@ body {
 
 .homhlo-sae h1::before {
   position: absolute;
-  top: 5px; 
-  left: 5px; 
+  top: 5px;
+  left: 5px;
   color: #000;
-  z-index: -1; 
-  text-shadow: none; 
+  z-index: -1;
+  text-shadow: none;
 }
 
 #homcontainer-fluid {
@@ -695,15 +727,15 @@ body {
 
 .homabout-fist {
   text-align: left;
-  max-width: 50%; 
-margin-top: 20px;
+  max-width: 50%;
+  margin-top: 20px;
 }
 
 .homabout-fist h1 {
   font-family: 'Poppins', sans-serif;
   color: rgb(235, 8, 8);
   font-size: 3.2rem;
-  text-shadow: 
+  text-shadow:
     1px 1px 0 rgb(0, 0, 0),
     2px 2px 0 rgb(0, 0, 0),
     2px 2px 0 rgb(211, 21, 21),
@@ -714,21 +746,21 @@ margin-top: 20px;
 
 .homevent-content {
   display: flex;
-  flex-direction: row; 
+  flex-direction: row;
   align-items: center;
 }
 
 .homfist-image {
-  order: 1; 
+  order: 1;
 }
 
 .homabout-fist {
-  order: 2; 
+  order: 2;
 }
 
 @media (max-width: 480px) {
   .homevent-content {
-    flex-direction: column; 
+    flex-direction: column;
   }
 
   .homfist-image {
@@ -743,11 +775,11 @@ margin-top: 20px;
 
 .homabout-fist h1::before {
   position: absolute;
-  top: 5px; 
-  left: 5px; 
+  top: 5px;
+  left: 5px;
   color: #000;
-  z-index: -1; 
-  text-shadow: none; 
+  z-index: -1;
+  text-shadow: none;
 }
 
 
@@ -757,12 +789,12 @@ margin-top: 20px;
   font-size: 1.7rem;
   line-height: 1.5;
   color: #b8bec4;
-  
+
 }
 
-.homfist-image{
-   height: 550px;
-   width:450px;
+.homfist-image {
+  height: 550px;
+  width: 450px;
 }
 
 .homfist-image img {
@@ -785,49 +817,49 @@ margin-top: 20px;
 }
 
 
-.hombaja-image{
+.hombaja-image {
   height: 400px;
-  width:540px;
-  
+  width: 540px;
+
 }
 
 .hombaja-image img {
- width: 100%;
- height: auto;
- max-width: 100%;
- display: block;
- margin: 0 auto;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  display: block;
+  margin: 0 auto;
 }
 
 @media (max-width: 480px) {
- .hombaja-image {
-   text-align: center;
- }
+  .hombaja-image {
+    text-align: center;
+  }
 
- .hombaja-image img {
-   width: 73%;
-   height: auto;
- }
+  .hombaja-image img {
+    width: 73%;
+    height: auto;
+  }
 }
 
 
 .hom-content {
   display: flex;
-  flex-direction: row; 
+  flex-direction: row;
   align-items: center;
 }
 
 .homaiml-image {
-  order: 1; 
+  order: 1;
 }
 
 .homabout-aiml {
-  order: 2; 
+  order: 2;
 }
 
 @media (max-width: 480px) {
   .homevent-content {
-    flex-direction: column; 
+    flex-direction: column;
   }
 
   .homaiml-image {
@@ -839,52 +871,53 @@ margin-top: 20px;
   }
 }
 
-.homaiml-image{
+.homaiml-image {
   height: 400px;
-  width:450px;
-  
+  width: 450px;
+
 }
 
 .homaiml-image img {
- width: 100%;
- height: auto;
- max-width: 100%;
- display: block;
- margin: 0 auto;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  display: block;
+  margin: 0 auto;
 }
 
 @media (max-width: 480px) {
- .homaiml-image {
-   text-align: center;
- }
- .homaiml-image img {
-   width: 73%;
-   height: auto;
- }
+  .homaiml-image {
+    text-align: center;
+  }
+
+  .homaiml-image img {
+    width: 73%;
+    height: auto;
+  }
 }
 
 
 @media (max-width: 480px) {
 
   .homabout {
-    flex-direction: column; 
+    flex-direction: column;
   }
 
   .homevent-content {
-    flex-direction: column; 
-    justify-content: center; 
+    flex-direction: column;
+    justify-content: center;
   }
 
   .homabout-fist {
-    max-width: 100%; 
-    margin: 1em; 
-    text-align: center; 
+    max-width: 100%;
+    margin: 1em;
+    text-align: center;
     margin-top: 10px;
   }
 
   .homabout-fist h1 {
-    font-size: 3rem; 
-    text-shadow: none; 
+    font-size: 3rem;
+    text-shadow: none;
   }
 
   .homabout-fist p {
@@ -898,7 +931,7 @@ margin-top: 20px;
 
 .homabout-baja {
   text-align: left;
-  max-width: 50%; 
+  max-width: 50%;
   margin: 2em;
 }
 
@@ -906,7 +939,7 @@ margin-top: 20px;
   font-family: 'Poppins', sans-serif;
   color: rgb(235, 8, 8);
   font-size: 3.2rem;
-  text-shadow: 
+  text-shadow:
     1px 1px 0 rgb(0, 0, 0),
     2px 2px 0 rgb(0, 0, 0),
     2px 2px 0 rgb(211, 21, 21),
@@ -917,11 +950,11 @@ margin-top: 20px;
 
 .homabout-baja h1::before {
   position: absolute;
-  top: 5px; 
-  left: 5px; 
+  top: 5px;
+  left: 5px;
   color: #000;
-  z-index: -1; 
-  text-shadow: none; 
+  z-index: -1;
+  text-shadow: none;
 }
 
 
@@ -931,25 +964,25 @@ margin-top: 20px;
   font-size: 1.7rem;
   line-height: 1.5;
   color: #b8bec4;
-  
+
 }
 
 @media (max-width: 480px) {
 
   .homevent-content {
-    flex-direction: column; 
-    justify-content: center; 
+    flex-direction: column;
+    justify-content: center;
   }
 
   .homabout-baja {
-    max-width: 100%; 
-    margin: 1em; 
-    text-align: center; 
+    max-width: 100%;
+    margin: 1em;
+    text-align: center;
   }
 
   .homabout-baja h1 {
-    font-size: 3rem; 
-    text-shadow: none; 
+    font-size: 3rem;
+    text-shadow: none;
   }
 
   .homabout-baja p {
@@ -962,7 +995,7 @@ margin-top: 20px;
 
 .homabout-aiml {
   text-align: left;
-  max-width: 50%; 
+  max-width: 50%;
   margin: 2em;
 }
 
@@ -970,7 +1003,7 @@ margin-top: 20px;
   font-family: 'Poppins', sans-serif;
   color: rgb(235, 8, 8);
   font-size: 3.2rem;
-  text-shadow: 
+  text-shadow:
     1px 1px 0 rgb(0, 0, 0),
     2px 2px 0 rgb(0, 0, 0),
     2px 2px 0 rgb(211, 21, 21),
@@ -981,11 +1014,11 @@ margin-top: 20px;
 
 .homabout-aiml h1::before {
   position: absolute;
-  top: 5px; 
-  left: 5px; 
+  top: 5px;
+  left: 5px;
   color: #000;
-  z-index: -1; 
-  text-shadow: none; 
+  z-index: -1;
+  text-shadow: none;
 }
 
 
@@ -995,26 +1028,26 @@ margin-top: 20px;
   font-size: 1.7rem;
   line-height: 1.5;
   color: #b8bec4;
-  
+
 }
 
 
 @media (max-width: 480px) {
 
   .homevent-content {
-    flex-direction: column; 
-    justify-content: center; 
+    flex-direction: column;
+    justify-content: center;
   }
 
   .homabout-aiml {
-    max-width: 100%; 
-    margin: 1em; 
-    text-align: center; 
+    max-width: 100%;
+    margin: 1em;
+    text-align: center;
   }
 
   .homabout-aiml h1 {
-    font-size: 2.7rem; 
-    text-shadow: none; 
+    font-size: 2.7rem;
+    text-shadow: none;
   }
 
   .homabout-aiml p {
@@ -1024,10 +1057,10 @@ margin-top: 20px;
   }
 }
 
-.yt{
+.homyt {
   display: flex;
-  flex-direction: column; 
-  align-items: center; 
+  flex-direction: column;
+  align-items: center;
   margin-top: 10px;
 }
 
@@ -1036,9 +1069,9 @@ margin-top: 20px;
   font-family: 'Poppins', sans-serif;
   color: rgb(235, 21, 21);
   font-size: 3.5rem;
-  text-align: center; 
-  margin-bottom:20px; 
-  text-shadow: 
+  text-align: center;
+  margin-bottom: 20px;
+  text-shadow:
     1px 1px 0 rgb(0, 0, 0),
     2px 2px 0 rgb(0, 0, 0),
     2px 2px 0 rgb(148, 31, 31),
@@ -1049,54 +1082,55 @@ margin-top: 20px;
 
 .homyt-sae h1::before {
   position: absolute;
-  top: 5px; 
-  left: 5px; 
+  top: 5px;
+  left: 5px;
   color: #000;
-  z-index: -1; 
-  text-shadow: none; 
+  z-index: -1;
+  text-shadow: none;
 }
 
-.yt {
+.homyt {
   overflow: hidden;
   white-space: nowrap;
   position: relative;
-  height: auto; 
+  height: auto;
   display: flex;
   align-items: center;
   padding: 0 10px;
 }
 
-.yt > div {
+.homyt>div {
   display: flex;
   flex-direction: row;
   white-space: nowrap;
-  animation: scroll 40s linear infinite; 
+  animation: scroll 40s linear infinite;
 }
 
-.yt:hover > div {
+.homyt:hover>div {
   animation-play-state: paused;
 }
 
-.yt iframe {
-  margin: 0 5px; 
-  width: 280px; 
-  height: 158px; 
+.homyt iframe {
+  margin: 0 5px;
+  width: 280px;
+  height: 158px;
 }
 
 @keyframes scroll {
   0% {
     transform: translateX(100%);
   }
+
   100% {
     transform: translateX(-100%);
   }
 }
 
 
-.yt::before {
+.homyt::before {
   content: "";
   display: block;
-  width: 50vw; 
+  width: 50vw;
 }
 
 
@@ -1108,7 +1142,7 @@ margin-top: 20px;
 
 .homvideo-container {
   position: relative;
-  width: 55vw; 
+  width: 55vw;
   height: 32vw;
   justify-content: center;
   align-items: center;
@@ -1122,10 +1156,10 @@ margin-top: 20px;
   height: 100%;
 }
 
-@media (max-width:480px){
-  .homvideo-container{
-    width:95vw;
-    height:68vw;
+@media (max-width:480px) {
+  .homvideo-container {
+    width: 95vw;
+    height: 68vw;
   }
 }
 
@@ -1140,7 +1174,7 @@ margin-top: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
-  
+
   width: 100%;
 }
 
@@ -1151,7 +1185,7 @@ margin-top: 20px;
 
 .homslide {
   min-width: 200px;
-  margin-right: 10px; 
+  margin-right: 10px;
   box-sizing: border-box;
 }
 
@@ -1159,23 +1193,24 @@ margin-top: 20px;
 
 @keyframes scroll {
   0% {
-      transform: translateX(0);
+    transform: translateX(0);
   }
+
   100% {
-      transform: translateX(-50%);
+    transform: translateX(-50%);
   }
 }
 
-@media (max-width:480px){
-  .homslide{
-    width:20vw;
-    height:52vw;
+@media (max-width:480px) {
+  .homslide {
+    width: 20vw;
+    height: 52vw;
   }
 }
 
 .homslider-container {
   width: 100%;
-  overflow: hidden; 
+  overflow: hidden;
 }
 
 .homslider {
@@ -1198,13 +1233,10 @@ margin-top: 20px;
 
 @keyframes scroll {
   0% {
-      transform: translateX(0);
+    transform: translateX(0);
   }
+
   100% {
-      transform: translateX(-50%);
+    transform: translateX(-50%);
   }
 }
-
-
-
-

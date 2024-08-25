@@ -16,7 +16,7 @@ function App() {
     <Router>
       <div className="App">
         <Nav />
-        <div className="pt-24 min-h-screen">
+        <div className="pt-12 min-h-screen">
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/events" element={<Events />} />

@@ -4,220 +4,190 @@ import Cardalumni from './CardAlumni.js'
 import Wave from './Wave.js';
 
 const Alumni = () => {
-    const cardsData = [
+    const cardsData =[
         {
-            "image":"https://live.staticflickr.com/65535/52768996893_caf48d783b_n.jpg",
-            "name":"Divas Gupta",
-            "instalink":"https://www.instagram.com/divas__gupta/",
-            "linkedinlink":"https://www.linkedin.com/in/divas-gupta-a23501125/",
-            "facebooklink":"/"
+          "image": "https://live.staticflickr.com/65535/52770752569_2b8ecca0dc_n.jpg",
+          "name": "Rahul Kashyap",
+          "instalink": "https://instagram.com/rahulkshp64?igshid=YmMyMTA2M2Y=",
+          "linkedinlink": "https://www.linkedin.com/in/meetrahulkashyap/",
+          "facebooklink": "/"
         },
         {
-            image:"https://live.staticflickr.com/65535/52768499151_e754bb1b90_n.jpg",
-            name:"Anurag Singh",
-            instalink:"https://www.instagram.com/anurag1857/",
-            linkedinlink:"https://www.linkedin.com/in/anurag1857/",
-            facebooklink:"/"
+          "image": "https://live.staticflickr.com/65535/52770839734_5e031c3c8c_n.jpg",
+          "name": "Vaibhav Ojha",
+          "instalink": "https://instagram.com/vaibhav___ojha?igshid=YmMyMTA2M2Y=",
+          "linkedinlink": "https://www.linkedin.com/in/vaibhav-ojha-2bb06a224/",
+          "facebooklink": "/"
         },
         {
-            image:"https://live.staticflickr.com/65535/52768931815_807e7fd6f3_m.jpg",
-            name:"Aniket Panigrahi",
-            instalink:"https://www.instagram.com/iamaniketpanigrahi16/",
-            linkedinlink:"https://www.linkedin.com/in/aniketpanigrahi/",
-            facebooklink:"/"
+          "image": "https://live.staticflickr.com/65535/52770963502_3bf0621ced_n.jpg",
+          "name": "Ayushi Gupta",
+          "instalink": "https://instagram.com/_ayug_?igshid=YmMyMTA2M2Y=",
+          "linkedinlink": "https://www.linkedin.com/in/ayushi-gupta-8444b2202/",
+          "facebooklink": "/"
         },
         {
-            image:"https://live.staticflickr.com/65535/52767981077_c0293c8bee_n.jpg" ,
-            name:"Satyam Shorya Jha",
-            instalink:"https://www.instagram.com/ssj11___/",
-            linkedinlink:"https://www.linkedin.com/in/satyam-shorya-jha-520a19194/",
-            facebooklink:"/"
+          "image": "https://live.staticflickr.com/65535/52769982052_1439e8a056_n.jpg",
+          "name": "Sandeep Verma",
+          "instalink": "https://instagram.com/vsandeep13?igshid=YmMyMTA2M2Y=",
+          "linkedinlink": "https://www.linkedin.com/in/vsan13/",
+          "facebooklink": "/"
         },
         {
-            image:"https://live.staticflickr.com/65535/52768940625_2bb0d6208a_n.jpg" ,
-            name:"S. Hemanth",
-            instalink:"https://www.instagram.com/hemanthsanagavarapu/",
-            linkedinlink:"https://www.linkedin.com/in/hemanth-sanagavarapu-7a70161b2/",
-            facebooklink:"/"
+          "image": "https://live.staticflickr.com/65535/52770777144_ceb4de8b33_n.jpg",
+          "name": "Asif Khan",
+          "instalink": "https://instagram.com/asif_khan1911?igshid=YmMyMTA2M2Y=",
+          "linkedinlink": "https://www.linkedin.com/in/asif-khan-a1489964/",
+          "facebooklink": "/"
         },
         {
-            image:"https://live.staticflickr.com/65535/52768790894_9e57425f04_n.jpg" ,
-            name:"Suryadip Mondal",
-            instalink:"https://www.instagram.com/s.u.r.j.o__/",
-            linkedinlink:"https://www.linkedin.com/in/suryadip-mondal-1534921b1/",
-            facebooklink:"/"
+          "image": "https://live.staticflickr.com/65535/52770737614_0e22c3bba8_w.jpg",
+          "name": "D. Sharvani Reddy",
+          "instalink": "https://instagram.com/sharvani_reddyy?igshid=YmMyMTA2M2Y=",
+          "linkedinlink": "https://www.linkedin.com/in/sharvani-reddy-dommata-8444b8210/",
+          "facebooklink": "/"
         },
         {
-            image:"https://live.staticflickr.com/65535/52768794844_9406bd0899_n.jpg" ,
-            name:"Sukanya dutta",
-            instalink:"https://www.instagram.com/_sukanyadutta_/",
-            linkedinlink:"https://www.linkedin.com/in/sukanya-dutta-72a45219a/",
-            facebooklink:"/"
+          "image": "https://live.staticflickr.com/65535/52771752264_f93e99eaf8_w.jpg",
+          "name": "Neel Kamal",
+          "instalink": "https://instagram.com/_hyperconjugate_?igshid=YmMyMTA2M2Y=",
+          "linkedinlink": "https://www.linkedin.com/in/neel-kamal1407/",
+          "facebooklink": "/"
         },
         {
-            image:"https://live.staticflickr.com/65535/52768004002_1a11c68c93_n.jpg" ,
-            name:"Soumyadeep Das",
-            instalink:"https://instagram.com/sd.soumya_deep?igshid=YmMyMTA2M2Y=",
-            linkedinlink:"https://www.linkedin.com/in/soumyadeepdas-20/",
-            facebooklink:"/"
+          "image": "https://live.staticflickr.com/65535/52769989932_96e6a564c0_n.jpg",
+          "name": "Asutosh Kumar Singh Rathore",
+          "instalink": "https://instagram.com/simp0la?igshid=YmMyMTA2M2Y=",
+          "linkedinlink": "https://www.linkedin.com/in/ashutosh-rathore-133b58177",
+          "facebooklink": "/"
         },
         {
-            image:"https://live.staticflickr.com/65535/52769035693_6ac2ab53bd_n.jpg" ,
-            name:"Anik Mondal",
-            instalink:"/",
-            linkedinlink:"/",
-            facebooklink:"/"
+          "image": "https://live.staticflickr.com/65535/52770762544_ca5e536294_n.jpg",
+          "name": "Subham Paul",
+          "instalink": "https://instagram.com/x_subham_d?igshid=YmMyMTA2M2Y=",
+          "linkedinlink": "https://www.linkedin.com/in/subham-paul-900320207/",
+          "facebooklink": "/"
         },
         {
-            image:"https://live.staticflickr.com/65535/52768572636_b17a8a9e2f_n.jpg" ,
-            name:"Vishal Jaiswal",
-            instalink:"https://www.instagram.com/tynnision_vishal/",
-            linkedinlink:"https://www.linkedin.com/in/vishal-jaiswal-4b103a199/",
-            facebooklink:"/"
+          "image": "https://live.staticflickr.com/65535/52770963442_7e8504f832_n.jpg",
+          "name": "Ishan Gupta",
+          "instalink": "https://instagram.com/ishangupta641?igshid=YmMyMTA2M2Y=",
+          "linkedinlink": "https://www.linkedin.com/in/ishan-gupta-0652611b8/",
+          "facebooklink": "/"
         },
         {
-            image:"https://live.staticflickr.com/65535/52768989855_507cd697f9_n.jpg" ,
-            name:"Souptik Das",
-            instalink:"https://instagram.com/soda_o_0_?igshid=YmMyMTA2M2Y=",
-            linkedinlink:"https://www.linkedin.com/in/souptik-das-2760ab14a/",
-            facebooklink:"/"
+          "image": "https://live.staticflickr.com/65535/52770963562_eb41760b38_w.jpg",
+          "name": "Navin Kumar Pathak",
+          "instalink": "https://instagram.com/kumarpathaknavin?igshid=YmMyMTA2M2Y=",
+          "linkedinlink": "https://www.linkedin.com/in/navin-kumar-pathak-a421a1235/",
+          "facebooklink": "/"
         },
         {
-            image:"https://live.staticflickr.com/65535/52768581316_5e948bbcc6_w.jpg" ,
-            name:"V. Sivaji Ganesh Naidu",
-            instalink:"https://instagram.com/sivajiganeshnaidu_v?igshid=YmMyMTA2M2Y=",
-            linkedinlink:"https://www.linkedin.com/in/sivaji-ganesh-naidu-vemulapalli-4bb14b1b9/",
-            facebooklink:"/"
+          "image": "https://live.staticflickr.com/65535/52770985890_14ec284834_n.jpg",
+          "name": "Sunay Pal",
+          "instalink": "https://instagram.com/palsunay?igshid=YmMyMTA2M2Y=",
+          "linkedinlink": "https://www.linkedin.com/in/sunay-pal-917035201/",
+          "facebooklink": "/"
         },
         {
-            image:"https://live.staticflickr.com/65535/52768838999_c9a8ecaf6f_w.jpg" ,
-            name:"Ayush Kumar",
-            instalink:"https://www.instagram.com/hashtag_aayush/",
-            linkedinlink:"https://www.linkedin.com/in/aayush-kumar-827976199/",
-            facebooklink:"/"
+          "image": "https://live.staticflickr.com/65535/52770958238_a1d772fb5c_w.jpg",
+          "name": "Ravi Prakash",
+          "instalink": "https://instagram.com/itz._ravi?igshid=YmMyMTA2M2Y=",
+          "linkedinlink": "https://www.linkedin.com/in/ravi-prakash-036a13200/",
+          "facebooklink": "/"
         },
         {
-            image:"https://live.staticflickr.com/65535/52769075718_9f16b7d0b9_w.jpg" ,
-            name:"Arpan Das",
-            instalink:"https://www.instagram.com/the_mystic_shadow/",
-            linkedinlink:"https://www.linkedin.com/in/arpan-das-217a731b3/",
-            facebooklink:"/"
+          "image": "https://live.staticflickr.com/65535/52770543366_761f532d74_z.jpg",
+          "name": "Sabharish Sappa",
+          "instalink": "https://instagram.com/sabharish_sappa?igshid=YmMyMTA2M2Y=",
+          "linkedinlink": "https://www.linkedin.com/in/sabharish-sappa-ba62a3216",
+          "facebooklink": "/"
         },
         {
-            image:"https://live.staticflickr.com/65535/52768845264_139784be57_w.jpg" ,
-            name:"Subham Gupta",
-            instalink:"https://www.instagram.com/subhamgupta173/",
-            linkedinlink:"https://www.linkedin.com/in/subham-gupta-2398361a9/",
-            facebooklink:"/"
+          "image": "https://live.staticflickr.com/65535/52771020693_7da5f3bd3a_n.jpg",
+          "name": "Faria Tariq",
+          "instalink": "https://instagram.com/tariqfaria23?igshid=YmMyMTA2M2Y=",
+          "linkedinlink": "https://www.linkedin.com/in/tariqfaria23",
+          "facebooklink": "/"
         },
         {
-            image:"https://live.staticflickr.com/65535/52769081713_12c71e61df_w.jpg" ,
-            name:"Anshika Chaudhary",
-            instalink:"https://www.instagram.com/anshi__kaaaaa/",
-            linkedinlink:"https://www.linkedin.com/in/anshika-chaudhary-3399561b5/",
-            facebooklink:"/"
+          "image": "https://live.staticflickr.com/65535/52770534016_72a7436c14_n.jpg",
+          "name": "Harsh Srivastava",
+          "instalink": "https://instagram.com/harshsrivastav521?igshid=YmMyMTA2M2Y=",
+          "linkedinlink": "https://www.linkedin.com/in/harsh-srivastava-11652b1b7",
+          "facebooklink": "/"
         },
         {
-            image:"https://live.staticflickr.com/65535/52768596866_b3c5844682_n.jpg" ,
-            name:"Arani Gangopadhyay",
-            instalink:"https://www.instagram.com/arani_008/",
-            linkedinlink:"https://www.linkedin.com/in/arani-gangopadhyay-7642b6243/",
-            facebooklink:"/"
+          "image": "https://live.staticflickr.com/65535/52770962720_9e830240db_w.jpg",
+          "name": "Shivanshu  Basu Mallik",
+          "instalink": "https://instagram.com/shivanshu_basumallick?igshid=YmMyMTA2M2Y=",
+          "linkedinlink": "https://www.linkedin.com/in/sbmallick",
+          "facebooklink": "/"
         },
         {
-            image:"https://live.staticflickr.com/65535/52769134248_ab505e843d_n.jpg" ,
-            name:"Ankita Mondal",
-            instalink:"https://www.instagram.com/miss__shady/",
-            linkedinlink:"https://www.linkedin.com/in/ankita-mandal-b173411ab/",
-            facebooklink:"/"
+          "image": "https://live.staticflickr.com/65535/53127082214_560dc78757_n.jpg",
+          "name": "Kushal Sarda",
+          "instalink": "https://instagram.com/kumarpathaknavin?igshid=YmMyMTA2M2Y=",
+          "linkedinlink": "https://www.linkedin.com/in/kushal-sarda-0126251aa/",
+          "facebooklink": "/"
         },
         {
-            image:"https://live.staticflickr.com/65535/52768599596_ca63fa83dd.jpg" ,
-            name:"Souham Banerjee",
-            instalink:"https://instagram.com/souhambanerjee?igshid=YmMyMTA2M2Y=",
-            linkedinlink:"https://www.linkedin.com/in/souham-banerjee-a407b5185/",
-            facebooklink:"/"
+          "image": "https://live.staticflickr.com/65535/52771494371_b5647c9349_n.jpg",
+          "name": "Sujal Gupta",
+          "instalink": "https://instagram.com/sujalgupta628?igshid=YmMyMTA2M2Y=",
+          "linkedinlink": "https://www.linkedin.com/in/sujal-gupta-436752201/",
+          "facebooklink": "/"
         },
         {
-            image:"https://live.staticflickr.com/65535/53126268392_96da2b46cf_b.jpg"  ,
-            name:"Koena Saha"
-    ,        instalink:"https://instagram.com/_mistalee_koena?igshid=YmMyMTA2M2Y=",
-            linkedinlink:"https://www.linkedin.com/in/koena-saha-869920200/",
-            facebooklink:"/"
+          "image": "https://live.staticflickr.com/65535/52770810594_44afa91a13_n.jpg",
+          "name": "Shraddha Mandal",
+          "instalink": "https://instagram.com/mandalshraddha?igshid=YmMyMTA2M2Y=",
+          "linkedinlink": "https://www.linkedin.com/in/shraddha-mandal-75b993215",
+          "facebooklink": "/"
         },
         {
-            image:"https://live.staticflickr.com/65535/52769130293_712c2ea392_n.jpg" ,
-            name:"Shivam Kumar",
-            instalink:"https://www.instagram.com/k21shivam/",
-            linkedinlink:"https://www.linkedin.com/in/shivam-kumar21/",
-            facebooklink:"/"
-        },
-        {
-            image:"https://live.staticflickr.com/65535/52769023890_c737f51ed5_w.jpg" ,
-            name:"Sneha Chattopadhya",
-            instalink:"https://www.instagram.com/sneha._.chattopadhyay/",
-            linkedinlink:"https://www.linkedin.com/in/sneha-chattopadhyay/",
-            facebooklink:"/"
-        },
-        {
-            image:"https://live.staticflickr.com/65535/52769101123_a53708378e_z.jpg" ,
-            name:"V. Manish Yadav",
-            instalink:"/",
-            linkedinlink:"https://www.linkedin.com/in/manish-veerla/",
-            facebooklink:"/"
-        },
-        {
-            image:"https://live.staticflickr.com/65535/52769028900_6d35be9ed8_n.jpg" ,
-            name:"Abhishek Sharma",
-            instalink:"https://www.instagram.com/_sharma_ab/",
-            linkedinlink:"https://www.linkedin.com/in/abhishek-sharma-nitdgp23/",
-            facebooklink:"/"
-        },
-        {
-            image:"https://live.staticflickr.com/65535/52769031690_f62cbffc28_n.jpg" ,
-            name:"Rahul Mondal"
-    ,        instalink:"https://instagram.com/r.a.h.u.l_mondal?igshid=YmMyMTA2M2Y=",
-            linkedinlink:"https://www.linkedin.com/in/rahul-mondal-86241b200/",
-            facebooklink:"/"
-        },
-        {
-            image:"https://live.staticflickr.com/65535/52768881894_0b1741aa1e_n.jpg" ,
-            name:"P. Venkatesh"
-    ,        instalink:"https://instagram.com/venky_9010?igshid=YmMyMTA2M2Y=",
-            linkedinlink:"https://www.linkedin.com/in/perepureddy-venkatesh-ab3420192/",
-            facebooklink:"/"
-        },
-        {
-            image:"https://live.staticflickr.com/65535/52769045905_2ec72118d6_w.jpg" ,
-            name:"P. Chandra Sekhar",
-            instalink:"https://instagram.com/sekhar_691?igshid=YmMyMTA2M2Y=",
-            linkedinlink:"https://www.linkedin.com/in/chandrasekharnaidu/",
-            facebooklink:"/"
-        },
-
-        {
-            image:"https://live.staticflickr.com/65535/52768634016_8ba58bf81e_n.jpg" ,
-            name:"Leela Prasad",
-            instalink:"/",
-            facebooklink:"/",
-            linkedinlink:"/",
-        },
-        {
-            image:"https://live.staticflickr.com/65535/52769919127_c24b8a862b_n.jpg" ,
-            name:"J. sri Chandana",
-            instalink:"/",
-            linkedinlink:"/",
-            facebooklink:"/"
-        },
-        
-
-    ];
+            "image": "https://live.staticflickr.com/65535/53126284227_4a0c1c0c46_m.jpg",
+            "name": "M. Vishnu Vardhan Reddy",
+            "instalink": "https://instagram.com/vvreddy_2709?igshid=YmMyMTA2M2Y=",
+            "linkedinlink": "https://www.linkedin.com/in/vishnu-vardhan-reddy-maddi-0b8615218/",
+            "facebooklink": "/"
+          },
+          {
+            "image": "https://live.staticflickr.com/65535/52771005658_7ed79be0eb_n.jpg",
+            "name": "Subham Mandal",
+            "instalink": "https://instagram.com/subham_mandal?igshid=YmMyMTA2M2Y=",
+            "linkedinlink": "https://www.linkedin.com/in/subham-mandal-8a18961b6/",
+            "facebooklink": "/"
+          },
+          {
+            "image": "https://live.staticflickr.com/65535/52770812484_b2e8ae8b60_w.jpg",
+            "name": "Shruti Sharma",
+            "instalink": "https://instagram.com/shruti.sh_01?igshid=YmMyMTA2M2Y=",
+            "linkedinlink": "https://www.linkedin.com/in/shruti-sharma-bb0b6820b/",
+            "facebooklink": "/"
+          },
+          {
+            "image": "https://live.staticflickr.com/65535/52771494461_96e011d3ab_w.jpg",
+            "name": "Sankalp Mohanty",
+            "instalink": "/",
+            "linkedinlink": "/",
+            "facebooklink": "/"
+          },
+          {
+            "image": "https://live.staticflickr.com/65535/52771983018_12d616e1b2_n.jpg",
+            "name": "K. Deekshita",
+            "instalink": "/",
+            "linkedinlink": "https://www.linkedin.com/in/deekshita-kancharla-35616a218/",
+            "facebooklink": "/"
+          }
+      ]
+      
     return (
       <>
       <Wave/>
-        <div class="container-alumni">
+        <div class="container-alumni mt-4">
             <h1>Meet Our <span>Alumni</span></h1>
-            <div className="content-alumni">
+            <div className="content-alumni mt-6">
                 <p>The 2023 and 2024 alumni have significantly contributed to the club's esteemed reputation through their diligent efforts in hosting a range of successful events, including SDV, TEDx, Aarohan, Drag & Drift, F.I.S.T., webinars, and various interactive workshops.
                 Their involvement in the club's Annual Magazine, Autopia, and videos on cutting-edge technology for Cryptech has been remarkable.
                 Furthermore, their participation in national events such as Baja India has been noteworthy.

@@ -8,12 +8,13 @@ export const secondYear = [
         "linkedinLink":"",
     },
     {
-        "url":require('../Assets/2ndYearImg/Heeth_Bhandari.jpg'),
-        "name":"Heeth Bhandari",
+        "url":require('../Assets/2ndYearImg/Sudeep Routray.jpg'),
+        "name":"Sudeep Routray",
         "position":"Junior Coordinator",
-        "instaLink":"https://www.instagram.com/heethbhandari_20?r=nametag",
-        "linkedinLink":"https://www.linkedin.com/in/heeth-b-13405922a",
+        "instaLink":"https://www.instagram.com/sudeepra4?r=nametag",
+        "linkedinLink":"https://www.linkedin.com/in/sudeep-kumar-routray-53a86527b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     },
+
     
     {
         "url":require('../Assets/2ndYearImg/Swaraj Jaiswal.jpeg'),
@@ -81,9 +82,6 @@ export const secondYear = [
         "instaLink":"https://www.instagram.com/shehryaar_123?r=nametag",
         "linkedinLink":"https://www.linkedin.com/in/abdus-sayeed-087671308",
     },
-
-    
-
 
 
     {
@@ -208,12 +206,13 @@ export const secondYear = [
         "instaLink":"https://www.instagram.com/shubhamaaay1?r=nametag",
         "linkedinLink":"https://www.linkedin.com/in/shubham-roy-428080273",
     },
+
     {
-        "url":require('../Assets/2ndYearImg/Sudeep Routray.jpg'),
-        "name":"Sudeep Routray",
+        "url":require('../Assets/2ndYearImg/Heeth_Bhandari.jpg'),
+        "name":"Heeth Bhandari",
         "position":"Junior Coordinator",
-        "instaLink":"https://www.instagram.com/sudeepra4?r=nametag",
-        "linkedinLink":"https://www.linkedin.com/in/sudeep-kumar-routray-53a86527b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+        "instaLink":"https://www.instagram.com/heethbhandari_20?r=nametag",
+        "linkedinLink":"https://www.linkedin.com/in/heeth-b-13405922a",
     },
     {
         "url":require('../Assets/2ndYearImg/Suyash.png'),

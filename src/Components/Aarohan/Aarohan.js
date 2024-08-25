@@ -74,7 +74,7 @@ function Aarohan() {
         </div>
       </div>
 
-      <div className="w-full my-20 lg:mt-0 overflow-hidden">
+      <div className="w-full  lg:mt-0 overflow-hidden">
         <div className="  flex max-w-full flex-col  rounded-md  lg:flex-row mx-10 my-10 lg:mx-36 lg:my-28 lg:justify-between">
           <div className="h-full w-full lg:h-[400px] lg:w-[590px] ">
             <img
