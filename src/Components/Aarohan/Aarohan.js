@@ -142,7 +142,7 @@ function Aarohan() {
       </div>
 
       <div data-aos="fade-right">
-        <h1 className="py-24 text-center text-5xl text-[#ff0000] font-extrabold underline">
+        <h1 className="py-24 text-center text-3xl text-[#ff0000] font-extrabold underline">
           OUR EVENTS AND WORKSHOPS IN AAROHAN
         </h1>
       </div>
@@ -168,7 +168,7 @@ function Aarohan() {
       </div>
 
       <div data-aos="fade-right">
-        <h1 className="py-24  pb-12 text-center text-5xl text-[#ff0000] font-extrabold underline">
+        <h1 className="py-24  pb-12 text-center text-3xl text-[#ff0000] font-extrabold  underline">
           AAROHAN GALLERY
         </h1>
       </div>
@@ -196,7 +196,7 @@ function Aarohan() {
       </div>
 
       <div data-aos="fade-right">
-        <h1 className="py-24 md:pb-36 text-center text-5xl text-[#FF0000] font-extrabold underline">
+        <h1 className="py-24 md:pb-36 text-center text-3xl text-[#FF0000] font-extrabold underline">
           AAROHAN ORGANIZERS
         </h1>
       </div>
