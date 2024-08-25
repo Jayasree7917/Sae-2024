@@ -50,7 +50,7 @@
   }
 
   .slide-image {
-    object-fit: cover; /* Ensure the image still covers the container */
+    object-fit: contain; /* Ensure the image still covers the container */
   }
 
   .clip-path {
