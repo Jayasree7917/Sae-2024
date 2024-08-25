@@ -33,7 +33,7 @@ const HomePage= () => {
         </div> 
         <div className="homheading">
           <h1>SAENITD</h1>
-          <p>We are the society of Automotive Engineers Collegiate Club of National Institute of Technology Durgapur</p>
+          <p>We are the Society of Automotive Engineers Collegiate Club of National Institute of Technology Durgapur</p>
         </div>
       </div>
     </section>
