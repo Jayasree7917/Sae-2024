@@ -76,24 +76,24 @@ const Teams = () => {
 
   return (
     <div className="teams-page animate-loading">
-      <h1 className="teams-heading">Our Team</h1>
+      <h1 className="teams-heading text-7xl">Our Team</h1>
 
       <section className="section left-to-right">
-        <h2 className="sub-heading">Office Bearers</h2>
+        <h2 className="sub-heading text-4xl font-bold">Office Bearers</h2>
         <hr className="section-divider" />
         <GridLayout members={finalYear} />
         <br/>
       </section>
 
       <section className="section right-to-left">
-        <h2 className="sub-heading">Senior Coordinators</h2>
+        <h2 className="sub-heading text-4xl font-bold">Senior Coordinators</h2>
         <hr className="section-divider" />
         <GridLayout members={thirdYear} />
         <br/>
       </section>
 
       <section className="section left-to-right">
-        <h2 className="sub-heading">Junior Coordinators</h2>
+        <h2 className="sub-heading text-4xl font-bold">Junior Coordinators</h2>
         <hr className="section-divider" />
         <GridLayout members={secondYear} />
         <br/>

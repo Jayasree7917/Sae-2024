@@ -1,31 +1,24 @@
-body {
-  font-family: 'Poppins', sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  color: #fff;
-  background-color: rgb(15, 17, 20);
-  overflow-x: hidden; 
-  min-height: 100vh; 
-  max-width: 100%;
+
+/* Navbar.css */
+
+.nav-link {
+  position: relative;
+  overflow: hidden;
+  color: white; /* Default text color */
 }
-.ted-nav-link {
-    position: relative;
-    overflow: hidden;
-    color: white;
-  }
-  
-  .ted-nav-link::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 0;
-    height: 2px;
-    background-color: #ff0000; 
-    transition: width 0.3s ease;
-  }
-  
-  .ted-nav-link:hover::after {
-    width: 100%;
-  }
-  
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background-color: #ff0000; /* Replace with your custom red color */
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+

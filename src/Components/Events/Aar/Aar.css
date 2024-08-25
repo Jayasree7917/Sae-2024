@@ -1,0 +1,154 @@
+.aar-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: rgb(21, 23, 26);
+}
+
+.aar-heading {
+    color: red;
+    font-size: 3rem;
+    margin: 50px 0;
+    text-align: center;
+    opacity: 0;
+    transform: translateY(-50px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.aar-heading.in-view {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.aar-paragraph {
+    color: rgb(144, 144, 144);
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    text-align: center;
+    max-width: 800px;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.aar-paragraph.in-view {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.aar-cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 20px;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.aar-cards.in-view {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.aar-card {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+.aar-card:hover {
+    transform: scale(1.05);
+}
+
+.aar-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.aar-card-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.aar-card:hover .aar-card-overlay {
+    opacity: 1;
+}
+
+.aar-overlay-text {
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.aar-animated-line {
+    width: 80%;
+    height: 2px;
+    margin: 40px auto;
+    background: linear-gradient(90deg, rgba(255, 0, 0, 0) 0%, rgba(255, 0, 0, 1) 50%, rgba(255, 0, 0, 0) 100%);
+    background-size: 200% 100%;
+    animation: slide 2s ease-in-out infinite;
+}
+
+@keyframes slide {
+    0% {
+        background-position: 0% 0%;
+    }
+    100% {
+        background-position: 100% 0%;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .aar-heading {
+        font-size: 2.6rem;
+    }
+
+    .aar-paragraph {
+        font-size: 1.3rem;
+    }
+
+    .aar-cards {
+        grid-template-columns: repeat(2, 1fr); 
+    }
+}
+
+@media (max-width: 375px) {
+    .aar-heading {
+        font-size: 2.6rem;
+    }
+
+    .aar-paragraph {
+        font-size: 1.3rem;
+    }
+
+    .aar-cards {
+        grid-template-columns: repeat(2, 1fr); 
+    }
+
+    .aar-overlay-text {
+        font-size: 1.2rem;
+        text-align: center;
+    }
+    
+}

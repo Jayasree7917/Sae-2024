@@ -1,25 +1,28 @@
 export const secondYear = [
+ 
     {
-        "url":require('../Assets/2ndYearImg/Aashish Patel.jpg'),
-        "name":"Aashish Patel",
+        "url":require('../Assets/2ndYearImg/Lakshanyaa B .jpg'),
+        "name":"Lakshanya B",
         "position":"Junior Coordinator",
-        "instaLink":"https://www.instagram.com/_aa_ss_hh_ii_ss_hh_?r=nametag",
-        "linkedinLink":"https://www.linkedin.com/in/ashish-patel-79aa90281?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+        "instaLink":"https://www.instagram.com/lakshanyaab?r=nametag",
+        "linkedinLink":"",
     },
     {
-        "url":require('../Assets/2ndYearImg/Abdus Sayeed.jpg'),
-        "name":"Abdus Sayeed",
+        "url":require('../Assets/2ndYearImg/Heeth_Bhandari.jpg'),
+        "name":"Heeth Bhandari",
         "position":"Junior Coordinator",
-        "instaLink":"https://www.instagram.com/shehryaar_123?r=nametag",
-        "linkedinLink":"https://www.linkedin.com/in/abdus-sayeed-087671308",
+        "instaLink":"https://www.instagram.com/heethbhandari_20?r=nametag",
+        "linkedinLink":"https://www.linkedin.com/in/heeth-b-13405922a",
     },
+    
     {
-        "url":require('../Assets/2ndYearImg/Akshit Kumar Jha.png'),
-        "name":"Akshit Kumar Jha",
+        "url":require('../Assets/2ndYearImg/Swaraj Jaiswal.jpeg'),
+        "name":"Swaraj Jaiswal",
         "position":"Junior Coordinator",
-        "instaLink":"https://www.instagram.com/_amansingh1007_?r=nametag",
-        "linkedinLink":"https://www.linkedin.com/in/akshit-jha-23a0841a0",
+        "instaLink":"https://www.instagram.com/_swaraj_jaiswal_?igsh=OXZ0a3Vtb20wZ2di",
+        "linkedinLink":"https://www.linkedin.com/in/swaraj-jaiswal-0b5304283?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     },
+
     {
         "url":require('../Assets/2ndYearImg/Aubanti Boshu.jpeg'),
         "name":"Aubanti Boshu",
@@ -70,13 +73,19 @@ export const secondYear = [
         "instaLink":"https://www.instagram.com/sairohan_22?r=nametag",
         "linkedinLink":"https://www.linkedin.com/in/b-durga-sai-rohan-94334a291?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     },
+  
     {
-        "url":require('../Assets/2ndYearImg/Heeth_Bhandari.jpg'),
-        "name":"Heeth Bhandari",
+        "url":require('../Assets/2ndYearImg/Abdus Sayeed.jpg'),
+        "name":"Abdus Sayeed",
         "position":"Junior Coordinator",
-        "instaLink":"https://www.instagram.com/heethbhandari_20?r=nametag",
-        "linkedinLink":"https://www.linkedin.com/in/heeth-b-13405922a",
+        "instaLink":"https://www.instagram.com/shehryaar_123?r=nametag",
+        "linkedinLink":"https://www.linkedin.com/in/abdus-sayeed-087671308",
     },
+
+    
+
+
+
     {
         "url":require('../Assets/2ndYearImg/Kashish Sonkar.jpg'),
         "name":"Kashish Sonkar",
@@ -84,13 +93,16 @@ export const secondYear = [
         "instaLink":"https://www.instagram.com/_kashish_0603?r=nametag",
         "linkedinLink":"https://www.linkedin.com/in/kashish-sonkar-23950728a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     },
+           
     {
-        "url":require('../Assets/2ndYearImg/Lakshanyaa B .jpg'),
-        "name":"Lakshanya B",
+        "url":require('../Assets/2ndYearImg/Aashish Patel.jpg'),
+        "name":"Aashish Patel",
         "position":"Junior Coordinator",
-        "instaLink":"https://www.instagram.com/lakshanyaab?r=nametag",
-        "linkedinLink":"",
+        "instaLink":"https://www.instagram.com/_aa_ss_hh_ii_ss_hh_?r=nametag",
+        "linkedinLink":"https://www.linkedin.com/in/ashish-patel-79aa90281?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     },
+
+
     {
         "url":require('../Assets/2ndYearImg/Lakshay Attri.jpg'),
         "name":"Lakshay Attri",
@@ -190,7 +202,7 @@ export const secondYear = [
         "linkedinLink":"https://www.linkedin.com/in/shresth-kamal-jha-74b893281?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     },
     {
-        "url":require('../Assets/2ndYearImg/Shubham Roy .jpg'),
+        "url":require('../Assets/2ndYearImg/Shubham Roy.jpg'),
         "name":"Shubham Roy",
         "position":"Junior Coordinator",
         "instaLink":"https://www.instagram.com/shubhamaaay1?r=nametag",
@@ -210,13 +222,16 @@ export const secondYear = [
         "instaLink":"",
         "linkedinLink":"https://www.linkedin.com/in/suyash-kumar-09ab83232",
     },
-    {
-        "url":require('../Assets/2ndYearImg/Swaraj Jaiswal.jpeg'),
-        "name":"Swaraj Jaiswal",
+  
+{
+        "url":require('../Assets/2ndYearImg/Akshit Kumar Jha.png'),
+        "name":"Akshit Kumar Jha",
         "position":"Junior Coordinator",
-        "instaLink":"https://www.instagram.com/_swaraj_jaiswal_?igsh=OXZ0a3Vtb20wZ2di",
-        "linkedinLink":"https://www.linkedin.com/in/swaraj-jaiswal-0b5304283?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+        "instaLink":"https://www.instagram.com/_amansingh1007_?r=nametag",
+        "linkedinLink":"https://www.linkedin.com/in/akshit-jha-23a0841a0",
     },
+
+
     {
         "url":require('../Assets/2ndYearImg/Vivek Dinkar.jpg'),
         "name":"Vivek Dinkar",

@@ -1,0 +1,110 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: Arial, sans-serif;
+  }
+  
+  .header {
+    position: relative;
+    width: 100%;
+    height: 100vh; 
+    background-image: url('./Aar2.JPG');
+    background-size: cover;
+    background-position: center;
+    overflow: hidden; 
+  }
+  
+  .header-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.5) 0%,
+      rgba(0, 0, 0, 0.7) 100%
+    );
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px; 
+    box-sizing: border-box;
+    opacity: 0; 
+    animation: fadeIn 2s forwards; 
+  }
+  
+  .header-content {
+    text-align: center;
+    color: rgb(255, 0, 0);
+    transform: translateY(50px); 
+    opacity: 0; 
+    animation: fadeInUp 2s 1s forwards; 
+  }
+  
+  .header-heading {
+    font-size: 3.2rem; 
+    margin: 0;
+    animation: bounceIn 1s forwards;
+  }
+  
+  .header-tagline {
+    color: rgb(144, 144, 144);
+    font-size: 1.25rem; 
+    margin-top: 10px;
+    animation: fadeInUp 2s 2s forwards; 
+  }
+  
+  @keyframes fadeIn {
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes bounceIn {
+    0% {
+      transform: scale(0.3);
+      opacity: 0;
+    }
+    50% {
+      transform: scale(1.05);
+      opacity: 1;
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .header-heading {
+      font-size: 3rem;
+    }
+  
+    .header-tagline {
+      font-size: 1.2rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .header-heading {
+      font-size: 2.8rem;
+    }
+  
+    .header-tagline {
+      font-size: 1.2rem;
+    }
+  }
+  

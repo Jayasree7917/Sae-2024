@@ -24,7 +24,7 @@ export const finalYear=[
     },
     
     {
-        "url":"../Assets/FinalYearImg/Aniket Kamble.png",
+        "url":"https://i.ibb.co/WVtSd9W/Aniket-Kamble.png",
         "name":"Aniket Kamble",
         "position":"Treasurer",
         "instaLink":"https://www.instagram.com/aniketkamble9192/",

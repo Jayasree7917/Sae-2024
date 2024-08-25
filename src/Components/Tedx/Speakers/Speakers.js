@@ -44,22 +44,22 @@ const speakers = [
   },
   {
     name: 'Kenidra Woods',
-    role: 'Mental Health Advocate/Social Justice Activist',
+    role: 'Mental Health and Social Justice Activist',
     imgSrc: 'https://i.postimg.cc/DwMJznVr/Screenshot-2024-08-22-022326.png'
   },
 ];
 
 const Speakers = () => {
   return (
-    <div className="speakers-container">
+    <div className="speakers-container mt-5">
       <div className="organisers-container">
         {speakers.map((speaker, index) => (
           <div key={index} className="ted-card">
             <div className="ted-imgBx">
               <img src={speaker.imgSrc} alt={speaker.name} />
             </div>
-            <div className="ted-details">
-              <h2>{speaker.name}<br /><span>{speaker.role}</span></h2>
+            <div className="ted-details ">
+              <h2 className='font-bold text-xl'>{speaker.name}<br /><span className='font-semibold text-lg'>{speaker.role}</span></h2>
             </div>
           </div>
         ))}

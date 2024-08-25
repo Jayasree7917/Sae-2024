@@ -13,13 +13,13 @@ body {
 }
 
 .teams-heading {
-    font-size: 3rem;
+    /* font-size: 3rem; */
     margin-bottom: 2rem;
     animation: fadeIn 2s ease-in-out;
 }
 
 .sub-heading {
-    font-size: 2rem;
+    /* font-size: 2rem; */
     margin-bottom: 1rem;
     color: rgb(202, 52, 53);
     animation: fadeIn 1.5s ease-in-out;
