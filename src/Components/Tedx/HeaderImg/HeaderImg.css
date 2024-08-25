@@ -1,45 +1,69 @@
 /* HeaderImg.css */
 
 .header-img-container {
-    width: 100vw;
-    height: 100vh;
-    position: relative;
-    overflow: hidden;
-    background-color: black;
-    display: flex; /* Add flexbox to center content */
-    align-items: center; /* Center vertically */
-    justify-content: center; /* Center horizontally */
-  }
-  
-  .slide-image {
-    width: 100%;
-    height: 100%;
-    object-fit: contain; /* Ensures the image covers the container */
-    position: absolute;
-    top: 0;
-    left: 0;
-    transition: opacity 1s ease;
-  }
-  
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  background-color: black;
+  display: flex; /* Center content */
+  align-items: center; /* Center vertically */
+  justify-content: center; /* Center horizontally */
+}
+
+.slide-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures image covers the container */
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: opacity 1s ease;
+}
+
+.clip-path {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: transform 1.2s ease, opacity 1s ease;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
   .clip-path {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    transition: transform 1.2s ease, opacity 1s ease;
+    transform: scale(0.8); /* Adjust scale for smaller screens */
   }
-  
-  /* Responsive adjustments */
-  @media (max-width: 768px) {
-    .clip-path {
-      transform: scale(0.8); /* Adjust scale for smaller screens */
-    }
+}
+
+@media (max-width: 480px) {
+  .clip-path {
+    transform: scale(0.6); /* Further adjustment for very small screens */
   }
-  
-  @media (max-width: 480px) {
-    .clip-path {
-      transform: scale(0.6); /* Further adjustment for very small screens */
-    }
+}
+
+/* Specific adjustment for screens smaller than 380px */
+@media (max-width: 380px) {
+  .header-img-container {
+    height: 60vh; /* Adjust the height to avoid cutting off content on small screens */
   }
-  
+
+  .slide-image {
+    object-fit: cover; /* Ensure the image still covers the container */
+  }
+
+  .clip-path {
+    transform: scale(0.5); /* Further adjustment for very small screens */
+  }
+}
+
+@media (max-width: 320px) {
+  .header-img-container {
+    height: 50vh; /* Further reduce the height for very small screens */
+  }
+
+  .clip-path {
+    transform: scale(0.4); 
+  }
+}
