@@ -14,7 +14,7 @@ export const thirdYear = [
         "linkedinLink":"https://www.linkedin.com/in/aniruddha-roy-b3b233261",
     },
     {
-        "url":"https://live.staticflickr.com/65535/53127103549_1983911a07_t.jpg",
+        "url":require('../Assets/3rdYearImg/Aryan Gupta.png'),
         "name":"Aryan Gupta",
         "position":"Senior Coordinator",
         "instaLink":"",

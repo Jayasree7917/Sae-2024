@@ -530,6 +530,7 @@
 
 .homhi-title {
   text-align: center;
+  padding: 0 4px;
   color: rgb(230, 17, 17);
   font-weight: bold;
   font-size: 25px;

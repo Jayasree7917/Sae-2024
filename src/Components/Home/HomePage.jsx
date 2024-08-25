@@ -114,21 +114,22 @@ const HomePage= () => {
           <h1 >Our Professors</h1>
         </div>
         <div class="homhi-container">
-            <div class="homhi" data-aos="fade-right">
-              <div class="homhi-photo-apurba"></div>
-              <div class="homhi-title">PROF(DR.) APURBA LAYEK
-                <br/>
-                <span>Department of Mechanical Engineering</span></div>
-            </div>
-            <div class="homhi" data-aos="fade-up">
+        <div class="homhi" data-aos="fade-right">
               <div class="homhi-photo-niloptal"></div>
-              <div class="homhi-title">PROF(DR.) NILOPTAL BANERJEE
+              <div class="homhi-title">Prof. Niloptal Banerjee
                 <br />
                 <span>Department of Mechanical Engineering</span></div>
             </div>
+            <div class="homhi" data-aos="fade-up">
+              <div class="homhi-photo-apurba"></div>
+              <div class="homhi-title">Prof. Apurba Layek
+                <br/>
+                <span>Department of Mechanical Engineering</span></div>
+            </div>
+            
             <div class="homhi" data-aos="fade-left">
               <div class="homhi-photo-tapas"></div>
-              <div class="homhi-title">PROF(DR.) TAPAS KUMAR SAHA
+              <div class="homhi-title">Prof. Tapas Kumar Saha
                 <br />
                 <span>Department of Electrical Engineering</span></div>
             </div>
@@ -166,7 +167,7 @@ const HomePage= () => {
       <div id="homcontainer-fluid">
         <div className="homevent-content">
         <div className="homfist-image ">
-          <img
+          <img className='pl-14 pt-14'
             src="https://github.com/Suke2004/Birthday-django-/blob/main/IMG-20240821-WA0048.jpg?raw=true"
             alt="Image"
             data-aos="fade-right"
@@ -204,7 +205,7 @@ const HomePage= () => {
       <div id="homcontainer-fluid">
         <div className="homevent-content">
         <div className="homaiml-image">
-          <img
+          <img className='pl-14 pt-6'
             src="https://github.com/Suke2004/Birthday-django-/blob/main/IMG-20240821-WA0076.jpg?raw=true"
             alt="Image"
             data-aos="fade-right"
@@ -221,8 +222,8 @@ const HomePage= () => {
     </section>
     
     <section className="homytr">
-      <div className="homyt-sae" >
-        <h1>Cryptech</h1>
+      <div className="homyt-sae " >
+        <h1 className='pt-16'>Cryptech</h1>
       </div>
     </section>
     <section className="homvid">
