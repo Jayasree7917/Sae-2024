@@ -16,20 +16,8 @@
 
 .homfoot-logo {
     display: flex;
-    align-items: flex-end; /* Aligns the logo at the bottom */
     justify-content: center;
     padding-bottom: 20px; 
-}
-.homfoot-logo img {
-    height: 160px; 
-    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out; /* Adds smooth transitions */
-    
-}
-
-.homfoot-logo {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 20px; 
 }
 
 .homfoot-logo img {
@@ -59,10 +47,10 @@
 .homfoot-head {
     color: rgb(202, 52, 53);
     font-size: 2em;
-    margin-bottom: 70px;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    margin: 15px;
+    margin: 12px;
     margin-bottom: 30px;
+    margin-left: 0;
     position: relative;
 }
 
@@ -72,7 +60,8 @@
     font-size: 2em;
     margin-bottom: 70px;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    margin: 15px;
+    margin: 12px;
+    margin-left: 0px;
     position: relative;
 }
 
@@ -82,30 +71,12 @@
     font-size: 2em;
     margin-bottom: 70px;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    margin: 15px;
+    margin: 12px;
+    margin-left: 0px;
     position: relative;
 }
 
-@media (max-width: 480px){
-    .homfoot-head{
-        margin-left: 37px;
-        margin-bottom:40px
-    }
-    .homfoot-head-1{
-        margin-left: 10px;
-    }
 
-    .homfoot-head-2{
-        margin-left: 10px;
-    }
-    .homfoot-logo{
-        padding: 3px 0px 5px 70px;
-    }
-    .homfoot-logo img{
-        height: 100px;
-    }
-
-}
 
 .homfoot-head::after {
     content: '';
@@ -138,10 +109,11 @@
 .homuseful-links-list {
     list-style-type: none;
     padding: 15px; 
+    padding-left: 0;
 }
 
 .homuseful-links-list li {
-    margin: 25px 0; 
+    margin: 25px 0px 0px 0px;
     font-size: 1.7em;
 }
 
@@ -162,6 +134,7 @@
     }
     .homuseful-links-header .homfoot-head{
         font-size: 40px;
+        padding-right: 80px;
     }
 }
 
@@ -184,13 +157,11 @@
     font-size: 1.4em;
     padding-bottom: 22px;
     transition: color 0.3s ease;
-    padding-left: 15px;
 }
 
 @media (max-width:480px){
     .homlist li{
         font-size: 18.5px;
-        padding-left: 10px;
         
     }
 }
@@ -208,39 +179,18 @@
     color: #ffffff;
     font-family: 'Times New Roman', Times, serif;
     font-size: 1.4em;
-    margin-bottom: 10px;
-    padding-right: 20px;
+    margin-bottom: 15px;
     transition: color 0.3s ease;
 }
-
-@media (max-width:480px){
-    .homlist-1 li{
-        font-size: 18.5px;
-        
-    }
+.homlist-1 i{
+    padding-right: 10px;
 }
-
-.homlist-1 li:hover {
-    color: rgb(202, 52, 53);
+.homlist-1 {
+    list-style: none;
 }
-
-.homlist li {
-    color: #ffffff;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 1.4em;
-    padding-bottom: 22px;
-    transition: color 0.3s ease;
-    padding-left: 15px;
+.homlist-1 i{
+    padding-right: 10px;
 }
-
-@media (max-width:480px){
-    .homlist li{
-        font-size: 18.5px;
-        padding-left: 10px;
-        
-    }
-}
-
 .homlist-2 li:hover {
     color: rgb(202, 52, 53);
 }
@@ -254,21 +204,65 @@
     color: #ffffff;
     font-family: 'Times New Roman', Times, serif;
     font-size: 1.4em;
-    margin-bottom: 10px;
-    padding-right: 20px;
+    margin-bottom: 15px;
     transition: color 0.3s ease;
+}
+.homlist-2 i{
+    padding-right: 10px;
 }
 
 @media (max-width:480px){
-    .homlist-2 li{
+    .homlist-1 li{
+        font-size: 18.5px;
+    }
+}
+
+.homlist-1 li:hover {
+    color: rgb(202, 52, 53);
+}
+
+.homlist li {
+    color: #ffffff;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.3em;
+    padding-bottom: 22px;
+    transition: color 0.3s ease;
+    padding-left: 15x;
+}
+
+@media (max-width:480px){
+    .homlist li{
         font-size: 18.5px;
         
+    }
+}
+
+
+
+@media (max-width:480px){
+    .homlist-2 li{
+        font-size: 17.5px;
+    }
+    .homlist-1 li{
+        font-size: 17.5px;
     }
 }
 
 .homlist-2 li:hover {
     color: rgb(202, 52, 53);
 }
+@media (max-width: 480px){
+    .homlist-1 i{
+        padding:10px 10px 0px 0px;
+    }
+    .homlist-2 i {
+        padding:10px 10px 0px 0px;
+    }
+    .homlist-1 li {
+        font-size: 14px;
+    }
+}
+
 
 
 .homfollow-us {
@@ -297,7 +291,7 @@
     width: 10em;
     align-items: center;
     justify-content: center;
-    border-color: #ffffff;
+    border-color: rgb(202, 52, 53);
     border-width: 2px;
     box-sizing: border-box;
     z-index: 1;
@@ -444,19 +438,18 @@
 }
 .homcontact i{
     margin-top: 25px;
+    margin-left: 15px;
+    margin-right: 0;
+    padding-right: 0;
+
 }
 
-@media (max-width: 480px){
-    .homcontact i{
-        margin-top: 25px;
-        padding-left: 10px;
-    }
-}
 
 .homcontact-info {
     display: flex;
     flex-direction: column;
     gap: 20px;
+    margin-left: 5px;
 }
 
 .homcontact-item {
@@ -468,16 +461,21 @@
 .homcontact-details {
     display: flex;
     flex-direction: column;
+    padding: 0px;
+    width: 100%;
 }
 
-.homcontact-details .homheading {
-    margin: 0;
-}
+
 
 .homcontact-item i{
-    padding: 20px;
+    padding: 20px 10px 20px 0px;
     scale:1.7;
     color: rgb(202, 52, 53);
+    margin-left: 10px;
+}
+.homcontact-item ul{
+    margin: 0;
+    padding: 0;
 }
 
 .anchor{
@@ -496,26 +494,16 @@
 
 .homlist li {
     margin-bottom: 5px;
-}
-
-@media (max-width: 480px){
-
-.homlist-1 i {
-    padding-left: 0px;
-    margin-right: 10px;
+    margin-left: 15px;
 }
 
 
+@media (max-width: 376px){
+    .homcontact-details{
+        padding-right: 30px;
+    }
 }
 
-.homlist-1 i {
-    padding-left: 0px;
-}
-
-
-.homlist-2 i {
-    padding-left: 0px;
-}
 
 @keyframes fadeIn {
     from { opacity: 0; }
@@ -571,13 +559,31 @@
         left: auto;
         right: 0;
         transform: none;
-        margin-top: 10px;
+        margin-top: 20px;
         display: flex;
         justify-content: center; 
     }
+    .homfoot-logo a{
+        padding: 10px 0px 110px  200px;
+    }
+    .homfoot-logo img{
+        height: 120px;
+    }
 
 }
+@media (max-width: 480px){
+    .homfoot-head{
+        margin-left: 20px;
+        margin-bottom:40px;
+    }
+    .homfoot-logo a{
+        padding: 20px 60px 70px  100px;
+    }
+    .homfoot-logo img{
+        height: 80px;
+    }
 
+}
 @media (max-width: 480px) {
         .homfooter {
             padding: 5px;

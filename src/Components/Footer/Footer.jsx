@@ -147,14 +147,14 @@ const Footer = () => {
                             <div className="homcontact-item">
                                 <i className="fa fa-user-o" aria-hidden="true" ></i>
                                 <div className="homcontact-details">
-                                    <h3 className="foot-head-1" >Siddharth Khandelwal</h3>
+                                    <h3 className="homfoot-head-1" >Siddharth Khandelwal</h3>
                                     <ul className="homlist-1">
-                                        <li>(President)</li>
+                                    <li>(President)</li>
                                         <li>
-                                            <i className="fa fa-envelope" id="Cont" ></i>
+                                            <i className="fa fa-envelope" ></i>
                                             <a href="mailto:siddharthkhandelwal78@gmail.com" className='anchor'>siddharthkhandelwal78@gmail.com</a>
                                         </li>
-                                        <li>
+                                        <li >
                                             <i className="fa fa-phone" ></i>
                                             <a href="tel:+916371657152" className='anchor'>+91 6371657152</a>
                                         </li>
@@ -166,7 +166,7 @@ const Footer = () => {
                                 <div className="homcontact-details">
                                     <h3 className="homfoot-head-2" >Prasant Sahu</h3>
                                     <ul className="homlist-2">
-                                        <li>(Head of Corporate Communication)</li>
+                                    <li>(Head of Corporate Communication)</li>
                                         <li>
                                             <i className="fa fa-envelope"></i>
                                             <a href="mailto:prasant999.sahu@gmail.com" className='anchor'>prasant999.sahu@gmail.com</a>
