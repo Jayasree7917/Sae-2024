@@ -1,71 +1,71 @@
 .container-alumni{
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    width: 100%;
-    align-items: center;
-    background:rgb(21,23,26);
-    padding-top: 2vh;
-    justify-content: center;
-    row-gap: 5vh;
-    top: 11vh;
-  
-    h1{
-        font-family: "Poppins", sans-serif;
-        font-weight: 400;
-        font-style: normal;
-        color: white;
-        z-index: 2;
-        font-size: 2em;
-      }
-    span{
-      color: rgb(255,0,0);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  background:rgb(21,23,26);
+  padding-top: 2vh;
+  justify-content: center;
+  row-gap: 5vh;
+  top: 11vh;
+
+  h1{
+      font-family: "Poppins", sans-serif;
+      font-weight: 400;
+      font-style: normal;
+      color: white;
+      z-index: 2;
+      font-size: 2em;
     }
+  span{
+    color: rgb(255,0,0);
+  }
+}
+.content-alumni{
+  color: white;
+  z-index: 1;
+  width: 80vw;
+  padding: 2px;
+  font-family: "Poppins", sans-serif;
+  padding: 20px;
+
+  p{
+    text-wrap: wrap;
+    position: relative;
+    animation: animate 1s linear;
+    font-size: 1.2em;
+  }
+}
+@keyframes animate{
+  0%{
+    left:-10vw;
+    opacity: 0%;
+  }
+  100%{
+    left:0vw;
+    opacity: 100%;
+  }
+}
+
+.cards-Alumni{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  column-gap: 2vw;
+  row-gap: 8vh;
+  width: 80vw;
+  
+}
+
+.cards-Alumni:last-child{
+  margin-bottom: 5vh;
+}
+@media screen and (max-width: 1180px){
+  .container-alumni{
+    row-gap: 0vh;
   }
   .content-alumni{
-    color: white;
-    z-index: 100;
-    width: 80vw;
-    padding: 2px;
-    font-family: "Poppins", sans-serif;
-    padding: 20px;
-  
-    p{
-      text-wrap: wrap;
-      position: relative;
-      animation: animate 1s linear;
-      font-size: 1.2em;
-    }
+    padding-top: 2vh;
   }
-  @keyframes animate{
-    0%{
-      left:-10vw;
-      opacity: 0%;
-    }
-    100%{
-      left:0vw;
-      opacity: 100%;
-    }
-  }
-  
-  .cards-Alumni{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    column-gap: 2vw;
-    row-gap: 8vh;
-    width: 80vw;
-    
-  }
-  
-  .cards-Alumni:last-child{
-    margin-bottom: 5vh;
-  }
-  @media screen and (max-width: 1180px){
-    .container-alumni{
-      row-gap: 0vh;
-    }
-    .content-alumni{
-      padding-top: 2vh;
-    }
-  }
+}

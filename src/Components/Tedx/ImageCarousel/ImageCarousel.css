@@ -1,4 +1,63 @@
-.gallery{
+
+.ted-image {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  max-height: 300px;
+  object-fit: cover;
+  object-position: top;
+}
+
+.ted-image:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px rgba(255, 0, 0, 0.5);
+  border: 2px solid rgba(255, 0, 0, 0.5);
+}
+
+.ted-close-button {
+  background-color: red;
+  color: white;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  border: 2px solid white;
+  font-size: 24px;
+  cursor: pointer;
+  z-index: 10;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.ted-close-button:hover {
+  background-color: darkred;
+}
+
+@media (max-width: 768px) {
+  .ted-close-button {
+    width: 35px;
+    height: 35px;
+    font-size: 20px;
+    top: 5px;
+    right: 5px;
+  }
+}
+
+@media (max-width: 480px) {
+  .ted-close-button {
+    width: 30px;
+    height: 30px;
+    font-size: 18px;
+    top: 2px;
+    right: 2px;
+  }
+}
+
+
+
+/* .gallery{
   -webkit-column-count: 3;
   -moz-column-count: 3;
   column-count: 3;
@@ -14,13 +73,13 @@
   transition: all 350ms ease;
   cursor: pointer;
   margin-bottom: 12px;
-  /* border: 2px solid rgb(105, 105, 195); */
-  animation: fadeIn 1s ease-in-out; /* Fade-in animation */
+
+  animation: fadeIn 1s ease-in-out; 
 }
 
 .gallery .pics:hover{
   filter: opacity(0.6);
-  transform: scale(1.05); /* Scale up on hover */
+  transform: scale(1.05); 
   transition: transform 0.3s ease, filter 0.3s ease;
 }
 
@@ -32,9 +91,7 @@
   }
 }
 
-@media (max-width: 768px) {
-  /* You can add specific styles here if needed */
-}
+
 
 @media (max-width: 480px) {
   .gallery {
@@ -82,7 +139,7 @@
   box-sizing: border-box;
   padding: 20px 0 20px;
   margin: 0 auto;
-  animation: modalEntrance 0.5s ease-in-out; /* Modal entrance animation */
+  animation: modalEntrance 0.5s ease-in-out; 
 }
 
 .model.open svg {
@@ -125,4 +182,4 @@
   to {
     opacity: 1;
   }
-}
+} */

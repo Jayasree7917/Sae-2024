@@ -4,7 +4,11 @@ import { events, arhn_gallary } from "./AarohanData.js";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import AarohanOrg from "./AarohanOrg.js";
+import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { Carousel } from "bootstrap";
+
+
 
 function Aarohan() {
   useEffect(() => {
@@ -12,7 +16,17 @@ function Aarohan() {
       duration: 1000,
       delay: 200,
     });
-  });
+  },[]);
+
+  useEffect(() => {
+    const carousel = document.querySelector("#carouselExampleFade");
+    const bootstrapCarousel = new Carousel(carousel, {
+      interval: 2000, 
+      ride: "carousel", 
+      pause: false, 
+    });
+    bootstrapCarousel.cycle(); 
+  },[] );
 
   return (
     <>
@@ -25,23 +39,30 @@ function Aarohan() {
           data-bs-pause="false"
         >
           <div className="carousel-inner">
-            <div className="carousel-item active md:h-[700px]">
+            <div className="carousel-item active h-[300px] md:h-[690px]">
               <img
                 src="https://images.pexels.com/photos/16070143/pexels-photo-16070143.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"
                 className="d-block w-100 arhn-c-img"
                 alt="..."
               />
             </div>
-            <div className="carousel-item md:h-[700px]">
+            <div className="carousel-item h-[300px] md:h-[690px]">
               <img
-                src="./assets/arhn7.jpg"
+                src="./assets/IMG_4746.jpg"
                 className="d-block w-100 arhn-c-img"
                 alt="..."
               />
             </div>
-            <div className="carousel-item md:h-[700px]">
+            <div className="carousel-item h-[300px]  md:h-[690px]">
               <img
                 src="./assets/arhn11.jpg"
+                className="d-block w-100 arhn-c-img"
+                alt="..."
+              />
+            </div>
+            <div className="carousel-item h-[300px] md:h-[690px]">
+              <img
+                src="./assets/IMG-20240411-WA0075.jpg"
                 className="d-block w-100 arhn-c-img"
                 alt="..."
               />
@@ -142,7 +163,7 @@ function Aarohan() {
       </div>
 
       <div data-aos="fade-right">
-        <h1 className="py-24 text-center text-3xl text-[#ff0000] font-extrabold underline">
+        <h1 className="pb-10   md:py-24 text-center text-3xl text-[#ff0000] font-extrabold underline">
           OUR EVENTS AND WORKSHOPS IN AAROHAN
         </h1>
       </div>
@@ -166,9 +187,10 @@ function Aarohan() {
           </div>
         ))}
       </div>
+     
 
       <div data-aos="fade-right">
-        <h1 className="py-24  pb-12 text-center text-3xl text-[#ff0000] font-extrabold  underline">
+        <h1 className="pt-24  md:pb-24 text-center text-3xl text-[#ff0000] font-extrabold  underline">
           AAROHAN GALLERY
         </h1>
       </div>
@@ -182,8 +204,6 @@ function Aarohan() {
               <img src={arhn_img.image} alt="arhn_gallary" />
             </div>
           ))}
-        </div>
-        <div className="arhn-slide-track">
           {arhn_gallary.map((arhn_img) => (
             <div
               key={arhn_img.id}
@@ -196,30 +216,12 @@ function Aarohan() {
       </div>
 
       <div data-aos="fade-right">
-        <h1 className="py-24 md:pb-36 text-center text-3xl text-[#FF0000] font-extrabold underline">
+        <h1 className="py-14  md:pb-24 text-center text-3xl text-[#FF0000] font-extrabold underline">
           AAROHAN ORGANIZERS
         </h1>
       </div>
 
-      <AarohanOrg/>
-      {/* <div className="w-full lg:px-28 flex flex-wrap mt-10 justify-center py-20 gap-5">
-        {organizers.map((arhn_org) => (
-          <div className="arhn-rotate">
-            <div key={arhn_org.id} className="arhn_org_card" data-aos="fade-up">
-              <div className="arhn-front">
-                <img
-                  src={arhn_org.organizer_img}
-                  alt="image"
-                  className="card__img"
-                />
-              </div>
-              <div className="arhn-back">
-                <p className="arhn-back-heading">{arhn_org.organizer_name}</p>
-              </div>
-            </div>
-          </div>
-        ))}
-      </div> */}
+      <AarohanOrg />
     </>
   );
 }

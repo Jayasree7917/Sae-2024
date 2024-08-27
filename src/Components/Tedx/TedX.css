@@ -1,17 +1,18 @@
+
 .underline-red {
-    text-decoration: underline;
-    text-decoration-color: #fff;
-    text-decoration-thickness: 5px; 
-    text-underline-offset: 8px; 
-  }
-  /* TedX.css */
+  text-decoration: underline;
+  text-decoration-color: #fff;
+  text-decoration-thickness: 5px; 
+  text-underline-offset: 8px; 
+}
+/* TedX.css */
 
 .ted-page {
-    width: 100%; /* Ensure full width */
-    min-height: 100vh; /* Ensure it covers the full viewport height */
-    overflow-x: hidden; /* Prevent horizontal scroll */
-  }
-  .text-custom-red {
-    --tw-text-opacity: 1;
-    color: rgb(255 0 0 / var(--tw-text-opacity)) /* #ff0000 */;
+  width: 100%; /* Ensure full width */
+  min-height: 100vh; /* Ensure it covers the full viewport height */
+  overflow-x: hidden; /* Prevent horizontal scroll */
+}
+.text-custom-red {
+  --tw-text-opacity: 1;
+  color: rgb(255 0 0 / var(--tw-text-opacity)) /* #ff0000 */;
 }
