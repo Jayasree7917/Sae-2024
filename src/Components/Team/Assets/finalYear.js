@@ -2,7 +2,7 @@ export const finalYear = [
 
     {
         "url": "https://live.staticflickr.com/65535/52770258999_b285654e31_n.jpg",
-        "name": "Siddarth Khandelwal",
+        "name": "Siddharth Khandelwal",
         "position": "President",
         "instaLink": "https://www.instagram.com/siddharthkhandelwal7878/?hl=en",
         "linkedinLink": "https://www.linkedin.com/in/siddharth-khandelwal-b54340225/",
