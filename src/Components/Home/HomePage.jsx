@@ -45,7 +45,7 @@ const HomePage = () => {
           <div className="homsubheading">
             <h2>We are present at</h2>
             <p>
-              Various events and fests and numerous competitions and projects, we are not tires but enthusiast enough to achieve the sky
+              Various events and fests and numerous competitions and projects, we are not tired but enthusiast enough to achieve the sky
             </p>
           </div>
 
@@ -111,7 +111,7 @@ const HomePage = () => {
       <section className="homprops">
         <div id="testimonial-box" className="homcontainer">
           <div className="homprops-heading" >
-            <h1 className="p-3">Faculty Advisors</h1>
+            <h1 className="p-3 font-bold">Our Faculty Advisors</h1>
           </div>
           <div class="homhi-container">
             <div class="homhi" data-aos="fade-right">
@@ -146,7 +146,7 @@ const HomePage = () => {
               className="homresponsive-lottie"
             />
             <div className="homabout-sae" data-aos="fade-up-left">
-              <h1 data-aos="fade-right">About SAE</h1>
+              <h1 data-aos="fade-right font-bold">About SAE</h1>
               <p>
                 The <span>SAE</span> Collegiate Club of NIT Durgapur, the only automotive club of its kind, organizes a diverse range of innovative events, interactive workshops, and enlightening lectures throughout the year, including F.I.S.T., webinars, SDV workshops, Drag and Drift Competition, and TEDX Talks.
                 As a pivotal force, SAE being a part of Team Aavishkar coordinates Aarohan, the second-largest techno-management festival in Eastern India, held at NIT Durgapur.
@@ -160,7 +160,7 @@ const HomePage = () => {
 
       <section className="homevents-section data">
         <div className="homhlo-sae" data-aos="fade-right">
-          <h1>Events</h1>
+          <h1 className='font-bold'>Events</h1>
         </div>
       </section>
       <section className='homevents-section-data'>
