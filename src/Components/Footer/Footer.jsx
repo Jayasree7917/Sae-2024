@@ -14,10 +14,10 @@ function Footer() {
               <img src="https://swarajjaiswal.github.io/saeevents/logo.png" alt="Logo" className="footer-logo" />
               <h5 className="footer-head">Follow us</h5>
               <div className="footer-social">
-                <Link to="https://www.facebook.com/SAENITD?mibextid=ZbWKwL" className="footer-social-link"><FaFacebook /></Link>
-                <Link to="https://www.linkedin.com/company/sae-india-nit-dgp-collegiate-chapter/mycompany/" className="footer-social-link"><FaLinkedin /></Link>
-                <Link to="https://www.youtube.com/@saenitdgp" className="footer-social-link"><FaYoutube /></Link>
-                <Link to="https://www.instagram.com/sae.nitd?igsh=MTd6a3l6cnZtNnY3cA==" className="footer-social-link"><FaInstagram /></Link>
+                <Link target='blank' to="https://www.facebook.com/SAENITD?mibextid=ZbWKwL" className="footer-social-link"><FaFacebook /></Link>
+                <Link target='blank' to="https://www.linkedin.com/company/sae-india-nit-dgp-collegiate-chapter/mycompany/" className="footer-social-link"><FaLinkedin /></Link>
+                <Link target='blank' to="https://www.youtube.com/@saenitdgp" className="footer-social-link"><FaYoutube /></Link>
+                <Link target='blank' to="https://www.instagram.com/sae.nitd?igsh=MTd6a3l6cnZtNnY3cA==" className="footer-social-link"><FaInstagram /></Link>
               </div>
             </div>
 
