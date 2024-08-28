@@ -109,7 +109,7 @@ export const secondYear = [
         "linkedinLink": "https://www.linkedin.com/in/lakshay-attri-5a18b1307?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     },
     {
-        "url": require('../Assets/2ndYearImg/Maddu Jayasree .jpg'),
+        "url": require('../Assets/2ndYearImg/Jayasree Maddu.png'),
         "name": "Maddu Jayasree",
         "position": "Junior Coordinator",
         "instaLink": "https://www.instagram.com/jayasreemaddu?r=nametag",

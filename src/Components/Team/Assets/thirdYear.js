@@ -120,7 +120,7 @@ export const thirdYear = [
         "linkedinLink": "https://www.linkedin.com/in/pothina-divya-venkata-durga-naga-sai-45610625a",
     },
     {
-        "url": "https://live.staticflickr.com/65535/52965150332_d1e9e9225e_n.jpg",
+        "url": require("./3rdYearImg/Charan Teja.png"),
         "name": "Pochepalli Charan Teja",
         "position": "Senior Coordinator",
         "instaLink": "https://www.instagram.com/urstrulycharanteja/",
