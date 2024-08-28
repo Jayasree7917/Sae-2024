@@ -28,7 +28,7 @@ function Footer() {
               <p className="footer-contact">Durgapur, West Bengal, 713209</p>
               <div className="footer-contact flex-item">
                 <FaEnvelope />
-                <Link className="text-md anchor" to="saeindia@nitdgp.ac.in">saeindia@nitdgp.ac.in</Link>
+                <a className="text-md anchor" href="mailto:saeindia@nitdgp.ac.in">saeindia@nitdgp.ac.in</a>
               </div>
             </div>
 
@@ -38,8 +38,7 @@ function Footer() {
               <p className="footer-contact">President</p>
               <div className="footer-contact flex-item">
                 <FaEnvelope />
-                <Link className='text-md anchor' to="president.saeindia@nitdgp.ac.in">president.saeindia@nitdgp.ac.in</Link>
-
+                <a className="text-md anchor" href="mailto:president.saeindia@nitdgp.ac.in">president.saeindia@nitdgp.ac.in</a>
               </div>
               <div className="footer-contact flex-item">
                 <FaPhoneAlt />
@@ -53,13 +52,14 @@ function Footer() {
               <p className="footer-contact">Head of Corporate Communication</p>
               <div className="footer-contact flex-item">
                 <FaEnvelope />
-                <Link to="prasant999.sahu@gmail.com" className="text-md anchor">prasant999.sahu@gmail.com</Link>
+                <a href="mailto:prasant999.sahu@gmail.com" className="text-md anchor">prasant999.sahu@gmail.com</a>
               </div>
               <div className="footer-contact flex-item">
                 <FaPhoneAlt />
-                <Link to="tel:+917908622520" className='text-md anchor'>+91 7908622520</Link>
+                <a href="tel:+917908622520" className="text-md anchor">+91 7908622520</a>
               </div>
             </div>
+
           </div>
         </div>
       </footer>
