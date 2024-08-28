@@ -17,8 +17,8 @@ export const thirdYear = [
         "url": require('../Assets/3rdYearImg/Aryan Gupta.png'),
         "name": "Aryan Gupta",
         "position": "Senior Coordinator",
-        "instaLink": "",
-        "linkedinLink": "",
+        "instaLink": "https://www.instagram.com/aryangupta_25?igsh=OGU2b3RsOWdxbTkw",
+        "linkedinLink": "https://www.linkedin.com/in/aryangupta2511/",
     },
     {
         "url": "https://live.staticflickr.com/65535/52965889164_af7b692f0f_n.jpg",
