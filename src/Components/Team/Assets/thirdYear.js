@@ -17,8 +17,8 @@ export const thirdYear = [
         "url": require('../Assets/3rdYearImg/Aryan Gupta.png'),
         "name": "Aryan Gupta",
         "position": "Senior Coordinator",
-        "instaLink": "",
-        "linkedinLink": "",
+        "instaLink": "https://www.instagram.com/aryangupta_25?igsh=OGU2b3RsOWdxbTkw",
+        "linkedinLink": "https://www.linkedin.com/in/aryangupta2511/",
     },
     {
         "url": "https://live.staticflickr.com/65535/52965889164_af7b692f0f_n.jpg",
@@ -120,7 +120,7 @@ export const thirdYear = [
         "linkedinLink": "https://www.linkedin.com/in/pothina-divya-venkata-durga-naga-sai-45610625a",
     },
     {
-        "url": "https://live.staticflickr.com/65535/52965150332_d1e9e9225e_n.jpg",
+        "url": require("./3rdYearImg/Charan Teja.png"),
         "name": "Pochepalli Charan Teja",
         "position": "Senior Coordinator",
         "instaLink": "https://www.instagram.com/urstrulycharanteja/",
@@ -194,7 +194,7 @@ export const thirdYear = [
         "url": "https://live.staticflickr.com/65535/52965888629_b33d98f268_n.jpg",
         "name": "Suresh Chandra Adhikari",
         "position": "Senior Coordinator",
-        "instaLink": "https://instagram.com/susmitakhatun192?igshid=MzNlNGNkZWQ4Mg==",
+        "instaLink": "https://www.instagram.com/suresh2441?igsh=MWZ2djNqbG5ra2g0bQ==",
         "linkedinLink": "https://www.linkedin.com/in/suresh-adhikari-69b129269",
     },
     {

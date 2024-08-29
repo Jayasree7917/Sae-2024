@@ -35,16 +35,17 @@ const TedX = () => {
       <HeaderImg />
       <About />
       <div className="max-w-screen mx-auto  ">
-      <h1 className="text-5xl font-bold text-custom-red text-center p-4 ">Gallery</h1>
+      <h1 class="text-[36px] md:text-[42px] font-bold text-custom-red text-center p-4">Gallery</h1>
+
         <ImageCarousel />
 
       </div>
       <div className="max-w-screen mx-auto p-4">
     
-        <h1 className="text-3xl font-bold text-custom-red text-center underline-red p-4">SPEAKERS</h1>
+        <h1 className="text-[36px] md:text-[42px] font-bold text-custom-red text-center pt-8  underline-red ">SPEAKERS</h1>
         <Speakers />
  
-        <h1 className="text-3xl font-bold text-custom-red text-center mb-8 pt-5 underline-red">ORGANISERS</h1>
+        <h1 className="text-[36px] md:text-[42px] font-bold text-custom-red text-center mb-8 pt-5 underline-red">ORGANISERS</h1>
         <Organisers />
       </div>
     </div>

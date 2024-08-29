@@ -70,7 +70,6 @@
   margin: 0;
   padding: 0;
   word-wrap: break-word;
-  /* Break long words to fit within the container */
   overflow-wrap: break-word;
 }
 
@@ -181,6 +180,7 @@
   flex-wrap: wrap;
   gap: 0;
   justify-content: center;
+  align-items: center;
 }
 
 .homcard {
@@ -660,13 +660,16 @@
   }
 
   .homabout-sae h1 {
-    font-size: 3rem;
+    font-size: 2.5rem;
     text-shadow: none;
   }
 
   .homabout-sae p {
     margin: 10px;
-    font-size: 1.3rem;
+    font-size: 1rem;
+  }
+  .homabout span{
+    font-size: 1.1rem;
   }
 }
 
@@ -724,6 +727,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+
 }
 
 .homabout-fist {
@@ -922,7 +926,7 @@
   }
 
   .homabout-fist p {
-    margin:2px 110px;
+    margin: 2px 110px;
     font-size: 1.6rem;
     line-height: 1.4;
 
@@ -1052,7 +1056,7 @@
   }
 
   .homabout-aiml p {
-    margin:2px 110px;
+    margin: 2px 110px;
     font-size: 1.6rem;
     line-height: 1.4;
   }

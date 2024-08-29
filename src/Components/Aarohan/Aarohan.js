@@ -167,9 +167,9 @@ function Aarohan() {
           OUR EVENTS AND WORKSHOPS IN AAROHAN
         </h1>
       </div>
-      <div className="w-full grid grid-col-1 md:grid-cols-2 lg:grid-cols-3 px-10 lg:px-32 my-10 gap-5">
+      <div className="w-full grid grid-col-1 md:grid-cols-2 xl:grid-cols-3 px-10 lg:px-32 my-10 gap-5">
         {events.map((event) => (
-          <div key={event.id} data-aos="fade-up">
+          <div key={event.id} data-aos="fade-up" >
             <div
               key={event.id}
               className="arhn-card w-full md:h-[400px] h-[350px]"
@@ -179,7 +179,7 @@ function Aarohan() {
                 <h2 className="text-2xl lg:text-3xl text-[#bec4da] font-bold">
                   {event.name}
                 </h2>
-                <p className="arhn-card-description text-sm lg:text-lg">
+                <p className="arhn-card-description text-[15px] lg:text-lg ">
                   {event.content}
                 </p>
               </div>

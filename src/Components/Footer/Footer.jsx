@@ -14,10 +14,10 @@ function Footer() {
               <img src="https://swarajjaiswal.github.io/saeevents/logo.png" alt="Logo" className="footer-logo" />
               <h5 className="footer-head">Follow us</h5>
               <div className="footer-social">
-                <Link to="https://www.facebook.com/SAENITD?mibextid=ZbWKwL" className="footer-social-link"><FaFacebook /></Link>
-                <Link to="https://www.linkedin.com/company/sae-india-nit-dgp-collegiate-chapter/mycompany/" className="footer-social-link"><FaLinkedin /></Link>
-                <Link to="https://www.youtube.com/@saenitdgp" className="footer-social-link"><FaYoutube /></Link>
-                <Link to="https://www.instagram.com/sae.nitd?igsh=MTd6a3l6cnZtNnY3cA==" className="footer-social-link"><FaInstagram /></Link>
+                <Link target='blank' to="https://www.facebook.com/SAENITD?mibextid=ZbWKwL" className="footer-social-link"><FaFacebook /></Link>
+                <Link target='blank' to="https://www.linkedin.com/company/sae-india-nit-dgp-collegiate-chapter/mycompany/" className="footer-social-link"><FaLinkedin /></Link>
+                <Link target='blank' to="https://www.youtube.com/@saenitdgp" className="footer-social-link"><FaYoutube /></Link>
+                <Link target='blank' to="https://www.instagram.com/sae.nitd?igsh=MTd6a3l6cnZtNnY3cA==" className="footer-social-link"><FaInstagram /></Link>
               </div>
             </div>
 
@@ -28,7 +28,7 @@ function Footer() {
               <p className="footer-contact">Durgapur, West Bengal, 713209</p>
               <div className="footer-contact flex-item">
                 <FaEnvelope />
-                <Link className="text-md anchor" to="saeindia@nitdgp.ac.in">saeindia@nitdgp.ac.in</Link>
+                <a className="text-md anchor" href="mailto:saeindia@nitdgp.ac.in">saeindia@nitdgp.ac.in</a>
               </div>
             </div>
 
@@ -38,8 +38,7 @@ function Footer() {
               <p className="footer-contact">President</p>
               <div className="footer-contact flex-item">
                 <FaEnvelope />
-                <Link className='text-md anchor' to="president.saeindia@nitdgp.ac.in">president.saeindia@nitdgp.ac.in</Link>
-
+                <a className="text-md anchor" href="mailto:president.saeindia@nitdgp.ac.in">president.saeindia@nitdgp.ac.in</a>
               </div>
               <div className="footer-contact flex-item">
                 <FaPhoneAlt />
@@ -53,20 +52,21 @@ function Footer() {
               <p className="footer-contact">Head of Corporate Communication</p>
               <div className="footer-contact flex-item">
                 <FaEnvelope />
-                <Link to="prasant999.sahu@gmail.com" className="text-md anchor">prasant999.sahu@gmail.com</Link>
+                <a href="mailto:prasant999.sahu@gmail.com" className="text-md anchor">prasant999.sahu@gmail.com</a>
               </div>
               <div className="footer-contact flex-item">
                 <FaPhoneAlt />
-                <Link to="tel:+917908622520" className='text-md anchor'>+91 7908622520</Link>
+                <a href="tel:+917908622520" className="text-md anchor">+91 7908622520</a>
               </div>
             </div>
+
           </div>
         </div>
       </footer>
 
       {/* Copyright Section */}
       <section className="footer-copy">
-        <div className="footer-copy-container">
+        <div className="footer-copy-container font-medium">
           Made By SAE-Dev Team @ 2024
           <Link to="/" className="footer-copy-link"> SAE </Link>. All rights reserved.
         </div>

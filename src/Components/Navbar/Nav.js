@@ -67,13 +67,13 @@ function Navbar() {
           <div
             className={`nav-menu md:hidden fixed top-16 left-0 w-full p-4 rounded-b-md shadow-md z-10 transition-transform duration-300 ease-in-out ${isOpen ? 'translate-y-0 opacity-100 bg-black' : '-translate-y-full opacity-0'}`}
           >
-            <div className="flex flex-col space-y-4 ml-12 m-8">
-              <Link to="/" className="block text-white hover:text-custom-red text-lg font-bold transition duration-300 ease-in-out" onClick={() => window.scrollTo(0, 0)}>HOME</Link>
-              <Link to="/events" className="block text-white hover:text-custom-red text-lg font-bold transition duration-300 ease-in-out" onClick={() => window.scrollTo(0, 0)}>EVENTS</Link>
-              <Link to="/teams" className="block text-white hover:text-custom-red text-lg font-bold transition duration-300 ease-in-out" onClick={() => window.scrollTo(0, 0)}>TEAMS</Link>
-              <Link to="/tedx" className="block text-white hover:text-custom-red text-lg font-bold transition duration-300 ease-in-out" onClick={() => window.scrollTo(0, 0)}>TEDX</Link>
-              <Link to="/arhn" className="block text-white hover:text-custom-red text-lg font-bold transition duration-300 ease-in-out" onClick={() => window.scrollTo(0, 0)}>AAROHAN</Link>
-              <Link to="/alumni" className="block text-white hover:text-custom-red text-lg font-bold transition duration-300 ease-in-out" onClick={() => window.scrollTo(0, 0)}>ALUMNI</Link>
+            <div className="flex flex-col space-y-3 ml-12 m-8 justify-center items-center">
+              <Link to="/" className=" no-underline block text-white hover:text-custom-red text-lg font-bold transition duration-300 ease-in-out" onClick={() => window.scrollTo(0, 0)}>HOME</Link>
+              <Link to="/events" className="no-underline block text-white hover:text-custom-red text-lg font-bold transition duration-300 ease-in-out" onClick={() => window.scrollTo(0, 0)}>EVENTS</Link>
+              <Link to="/teams" className=" no-underline block text-white hover:text-custom-red text-lg font-bold transition duration-300 ease-in-out" onClick={() => window.scrollTo(0, 0)}>TEAMS</Link>
+              <Link to="/tedx" className="no-underline block text-white hover:text-custom-red text-lg font-bold transition duration-300 ease-in-out" onClick={() => window.scrollTo(0, 0)}>TEDX</Link>
+              <Link to="/arhn" className="no-underline block text-white hover:text-custom-red text-lg font-bold transition duration-300 ease-in-out" onClick={() => window.scrollTo(0, 0)}>AAROHAN</Link>
+              <Link to="/alumni" className="no-underline block text-white hover:text-custom-red text-lg font-bold transition duration-300 ease-in-out" onClick={() => window.scrollTo(0, 0)}>ALUMNI</Link>
             </div>
           </div>
         </div>

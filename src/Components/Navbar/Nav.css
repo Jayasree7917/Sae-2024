@@ -4,7 +4,7 @@
 .nav-link {
   position: relative;
   overflow: hidden;
-  color: white; /* Default text color */
+  /* color: white; */
 }
 
 .nav-link::after {
