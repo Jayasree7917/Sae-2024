@@ -1,10 +1,11 @@
 
+
 /* Navbar.css */
 
 .nav-link {
   position: relative;
   overflow: hidden;
-  /* color: white; */
+  color: white; /* Default text color */
 }
 
 .nav-link::after {
