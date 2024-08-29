@@ -17,3 +17,14 @@
   transform: translateX(0);
 }
 
+/* About.css */
+
+.text-paragraph {
+  font-size: 16px; /* Default for small devices */
+}
+
+@media (min-width: 480px) {
+  .text-paragraph {
+    font-size: 18px; /* Adjust font size for medium devices and above */
+  }
+}
