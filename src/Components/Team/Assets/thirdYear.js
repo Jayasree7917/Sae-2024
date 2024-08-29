@@ -194,7 +194,7 @@ export const thirdYear = [
         "url": "https://live.staticflickr.com/65535/52965888629_b33d98f268_n.jpg",
         "name": "Suresh Chandra Adhikari",
         "position": "Senior Coordinator",
-        "instaLink": "https://instagram.com/susmitakhatun192?igshid=MzNlNGNkZWQ4Mg==",
+        "instaLink": "https://www.instagram.com/suresh2441?igsh=MWZ2djNqbG5ra2g0bQ==",
         "linkedinLink": "https://www.linkedin.com/in/suresh-adhikari-69b129269",
     },
     {
