@@ -181,6 +181,7 @@
   flex-wrap: wrap;
   gap: 0;
   justify-content: center;
+  align-items: center;
 }
 
 .homcard {
@@ -724,6 +725,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+
 }
 
 .homabout-fist {
@@ -922,7 +924,7 @@
   }
 
   .homabout-fist p {
-    margin:2px 110px;
+    margin: 2px 110px;
     font-size: 1.6rem;
     line-height: 1.4;
 
@@ -1052,7 +1054,7 @@
   }
 
   .homabout-aiml p {
-    margin:2px 110px;
+    margin: 2px 110px;
     font-size: 1.6rem;
     line-height: 1.4;
   }

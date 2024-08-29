@@ -49,7 +49,7 @@ const HomePage = () => {
             </p>
           </div>
 
-          <div className="homcard-container">
+          <div className="homcard-container mx-auto">
             <div className="homcard">
               <div className="homcontent">
                 <div className="homback">
