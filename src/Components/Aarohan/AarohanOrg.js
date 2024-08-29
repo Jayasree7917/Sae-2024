@@ -1,4 +1,3 @@
-
 import React from "react";
 import "./AarohanOrg.css";
 import { organizers } from "./AarohanData.js";
