@@ -1,7 +1,14 @@
+.ted-organisers-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+}
 
 .ted-image-card {
-  width: 100%;
-  height: 370px;
+  width: calc(33.333% - 16px); /* Three cards per row */
+  max-width: 400px; /* Limit the maximum size of each card */
+  height: auto; /* Let the height be dynamic */
   position: relative;
   transition: transform 0.4s ease-in;
   overflow: hidden;
@@ -15,7 +22,7 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: top;
+  object-position: center;
   transition: transform 0.6s ease-in;
   border-radius: 10px;
 }
@@ -30,8 +37,8 @@
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 80px; /* Increased height */
-  background-color: rgba(0, 0, 0, 0.5);
+  height: 60px;
+  background-color: rgba(0, 0, 0, 0.6);
   color: #fff;
   display: flex;
   justify-content: center;
@@ -42,4 +49,17 @@
 
 .ted-image-card:hover::after {
   transform: translateY(0);
+}
+
+/* Media queries for different screen sizes */
+@media (max-width: 1024px) {
+  .ted-image-card {
+    width: calc(50% - 16px); /* Two cards per row on medium screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .ted-image-card {
+    width: calc(100% - 16px); /* One card per row on small screens */
+  }
 }

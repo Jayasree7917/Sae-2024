@@ -34,7 +34,7 @@ const Organisers = () => {
   ];
 
     return (
-    <div className="organisers-container ">
+    <div className="ted-organisers-container ">
       {organisers.map((organiser, index) => (
         <div
           key={index}
