@@ -164,7 +164,7 @@ const HomePage = () => {
           <h1 className='font-bold'>Events</h1>
         </div>
       </section>
-      <section className='homevents-section-data'>
+      <section className='homevents-section-data px-6'>
         <div id="homcontainer-fluid">
           <div className="homevent-content">
             <div className="homfist-image ">
@@ -187,7 +187,7 @@ const HomePage = () => {
           <div className="homevent-content">
 
             <div className="homabout-baja" >
-              <h1 data-aos="fade-left">BAJA</h1>
+              <h1 data-aos="fade-left">BAJA SAEINDIA</h1>
               <p data-aos="fade-up-right">Baja SAEINDIA is a national event where university students design, build, and compete with off-road vehicles, promoting collaboration and engineering excellence.
                 NIT Durgapur's Team NDORS, comprising 25 students, achieved 38th position nationwide and 7th position among IITs and NITs. </p>
             </div>

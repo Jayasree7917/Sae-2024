@@ -588,9 +588,10 @@
 
 .homabout-sae h1 {
   margin: 20px;
+  font-weight: 800;
   font-family: 'Poppins', sans-serif;
   color: rgb(235, 8, 8);
-  font-size: 3.5rem;
+  font-size: 36px;
   text-shadow:
     1px 1px 0 rgb(0, 0, 0),
     2px 2px 0 rgb(0, 0, 0),
@@ -664,7 +665,8 @@
   }
 
   .homabout-sae h1 {
-    font-size: 3rem;
+    font-weight: 800;
+    font-size: 30px;
     text-shadow: none;
   }
 
@@ -734,14 +736,15 @@
 .homabout-fist {
   text-align: left;
   max-width: 50%;
-  margin-top: 20px;
+ 
 }
 
 .homabout-fist h1 {
   margin: 20px;
+  font-weight: 900;
   font-family: 'Poppins', sans-serif;
   color: rgb(235, 8, 8);
-  font-size: 3.2rem;
+  font-size: 36px;
   text-shadow:
     1px 1px 0 rgb(0, 0, 0),
     2px 2px 0 rgb(0, 0, 0),
@@ -807,7 +810,7 @@
 
 .homfist-image img {
   width: 100%;
-  height: auto;
+  height: 85vh;
   max-width: 100%;
   display: block;
   margin: 0 auto;
@@ -887,7 +890,7 @@
 
 .homaiml-image img {
   width: 100%;
-  height: auto;
+  height: 85vh;
   max-width: 100%;
   display: block;
   margin: 0 auto;
@@ -924,7 +927,8 @@
   }
 
   .homabout-fist h1 {
-    font-size: 3rem;
+    font-weight: 900;
+    font-size: 30px;
     text-shadow: none;
   }
 
@@ -945,9 +949,10 @@
 
 .homabout-baja h1 {
   margin: 20px;
+  font-weight: 900;
   font-family: 'Poppins', sans-serif;
   color: rgb(235, 8, 8);
-  font-size: 3.2rem;
+  font-size: 36px;
   text-shadow:
     1px 1px 0 rgb(0, 0, 0),
     2px 2px 0 rgb(0, 0, 0),
@@ -991,7 +996,8 @@
   }
 
   .homabout-baja h1 {
-    font-size: 3rem;
+    font-weight: 900;
+    font-size: 30px;
     text-shadow: none;
   }
 
@@ -1012,8 +1018,9 @@
 .homabout-aiml h1 {
   margin: 20px;
   font-family: 'Poppins', sans-serif;
+  font-weight: 900;
   color: rgb(235, 8, 8);
-  font-size: 3.2rem;
+  font-size: 36px;
   text-shadow:
     1px 1px 0 rgb(0, 0, 0),
     2px 2px 0 rgb(0, 0, 0),
@@ -1058,7 +1065,8 @@
   }
 
   .homabout-aiml h1 {
-    font-size: 2.7rem;
+    font-size: 30px;
+    font-weight: 900;
     text-shadow: none;
   }
 
