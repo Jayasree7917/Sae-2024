@@ -15,7 +15,7 @@
   padding: 0;
   position: relative;
 } */
-
+@import url("https://fonts.googleapis.com/css2?family=poppin:wght@400;500&display=swap");
 .home-container {
   overflow-x: hidden;
   position: relative;
@@ -587,6 +587,7 @@
 }
 
 .homabout-sae h1 {
+  margin: 20px;
   font-family: 'Poppins', sans-serif;
   color: rgb(235, 8, 8);
   font-size: 3.5rem;
@@ -610,15 +611,17 @@
 
 .homabout-sae p {
   margin: 20px;
-  font-family: 'Times New Roman', Times, serif;
-  font-size: 1.6rem;
+  text-align: left;
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
   color: #b8bec4;
   line-height: 1.5;
 }
 
 .homabout span {
   color: #e23024;
-  font-size: 31px;
+  font-size: 22px;
+  font-weight: 600;
 }
 
 @keyframes slideIn {
@@ -667,7 +670,7 @@
 
   .homabout-sae p {
     margin: 10px;
-    font-size: 1.3rem;
+    font-size: 16px;
   }
 }
 
@@ -735,6 +738,7 @@
 }
 
 .homabout-fist h1 {
+  margin: 20px;
   font-family: 'Poppins', sans-serif;
   color: rgb(235, 8, 8);
   font-size: 3.2rem;
@@ -788,8 +792,9 @@
 
 .homabout-fist p {
   margin: 20px;
-  font-family: 'Times New Roman', Times, serif;
-  font-size: 1.7rem;
+  text-align: left;
+  font-family: 'Poppins', sans-serif;
+  font-size: 22px;
   line-height: 1.5;
   color: #b8bec4;
 
@@ -925,7 +930,7 @@
 
   .homabout-fist p {
     margin: 2px 110px;
-    font-size: 1.6rem;
+    font-size: 18px;
     line-height: 1.4;
 
   }
@@ -939,6 +944,7 @@
 }
 
 .homabout-baja h1 {
+  margin: 20px;
   font-family: 'Poppins', sans-serif;
   color: rgb(235, 8, 8);
   font-size: 3.2rem;
@@ -963,8 +969,9 @@
 
 .homabout-baja p {
   margin: 20px;
-  font-family: 'Times New Roman', Times, serif;
-  font-size: 1.7rem;
+  text-align: left;
+  font-family: 'Poppins', sans-serif;
+  font-size: 22px;
   line-height: 1.5;
   color: #b8bec4;
 
@@ -990,7 +997,7 @@
 
   .homabout-baja p {
     margin: 2px 110px;
-    font-size: 1.6rem;
+    font-size: 18px;
     line-height: 1.4;
   }
 }
@@ -1003,6 +1010,7 @@
 }
 
 .homabout-aiml h1 {
+  margin: 20px;
   font-family: 'Poppins', sans-serif;
   color: rgb(235, 8, 8);
   font-size: 3.2rem;
@@ -1012,7 +1020,7 @@
     2px 2px 0 rgb(211, 21, 21),
     4px 4px 0 rgb(0, 0, 0),
     5px 5px 0 rgb(0, 0, 0);
-  position: relative;
+
 }
 
 .homabout-aiml h1::before {
@@ -1027,8 +1035,9 @@
 
 .homabout-aiml p {
   margin: 20px;
-  font-family: 'Times New Roman', Times, serif;
-  font-size: 1.7rem;
+  text-align: left;
+  font-family: 'Poppins', sans-serif;
+  font-size: 22px;
   line-height: 1.5;
   color: #b8bec4;
 
@@ -1055,7 +1064,7 @@
 
   .homabout-aiml p {
     margin: 2px 110px;
-    font-size: 1.6rem;
+    font-size: 18px;
     line-height: 1.4;
   }
 }
