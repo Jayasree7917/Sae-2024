@@ -124,7 +124,17 @@
   max-width: 700px;
   margin: 10px auto;
 }
+@media (max-width: 1280px) {
+  .homaiml-image img{
+    width: auto;
+    padding: 30px;
+  }
+  .homfist-image img {
+    width: auto;
+    padding: 30px;
+  }
 
+}
 @media (max-width: 480px) {
   .homheading h1 {
     font-size: 15vw;
@@ -344,7 +354,7 @@
 
 @media (max-width: 768px) {
   .home-container {
-    height: 280vh;
+    height: auto;
     background: linear-gradient(135deg, #151719, #151719);
   }
 
@@ -647,7 +657,7 @@
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 768px) {
   .homabout {
     flex-direction: column;
     padding: 2em;
@@ -682,7 +692,7 @@
   margin-bottom: 20px;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 768px) {
   .homresponsive-lottie {
     width: 80vw;
     height: 55vw;
@@ -768,7 +778,7 @@
   order: 2;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 768px) {
   .homevent-content {
     flex-direction: column;
   }
@@ -804,19 +814,17 @@
 }
 
 .homfist-image {
-  height: 550px;
+  height: 550px auto;
   width: 450px;
 }
 
 .homfist-image img {
-  width: 100%;
-  height: 85vh;
   max-width: 100%;
   display: block;
   margin: 0 auto;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 768px) {
   .homfist-image {
     text-align: center;
   }
@@ -842,7 +850,7 @@
   margin: 0 auto;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 768px) {
   .hombaja-image {
     text-align: center;
   }
@@ -868,7 +876,7 @@
   order: 2;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 768px) {
   .homevent-content {
     flex-direction: column;
   }
@@ -883,14 +891,13 @@
 }
 
 .homaiml-image {
-  height: 400px;
+  height: 400px auto;
   width: 450px;
 
 }
 
 .homaiml-image img {
   width: 100%;
-  height: 85vh;
   max-width: 100%;
   display: block;
   margin: 0 auto;
@@ -908,7 +915,7 @@
 }
 
 
-@media (max-width: 480px) {
+@media (max-width: 768px) {
 
   .homabout {
     flex-direction: column;
