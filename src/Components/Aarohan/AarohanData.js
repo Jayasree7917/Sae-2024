@@ -14,7 +14,7 @@ import { v4 as uuidv4} from 'uuid'
      id: uuidv4(),
      name: "ELECTRA",
      content:
-       "In Crossword participants from diverse backgrounds united to tackle thrilling challenges, intricate puzzles, and stimulating quizzes, showcasing their puzzle-solving skills. Running throughout AAROHAN, it was a dynamic experience filled with adrenaline-pumping puzzles and mind-bending riddles that tested wit and quick thinking at every turn.",
+       "In Electra, participants designed circuits using electronic devices and logic gates in simulation software. Electra offered hands-on training, combining practical instruction with interactive circuit creation for a dynamic experience. Participants used their knowledge and intuition to craft and test circuits effectively.",
      image: "/assets/arhnElectra.jpg",
    },
    {
