@@ -83,12 +83,13 @@
 
 @media (max-width: 768px) {
   .organisers-container {
-    grid-template-columns: repeat(1, 1fr); /* 1 column for smaller screens */
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 16px; 
   }
 }
 
 @media (max-width: 480px) {
-  .ted-card {
-    width: 100%;
+  .organisers-container {
+    grid-template-columns: repeat(1, 1fr); 
   }
 }

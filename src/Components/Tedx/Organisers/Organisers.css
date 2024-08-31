@@ -1,3 +1,4 @@
+/* Default styling for larger screens */
 .ted-organisers-container {
   display: flex;
   flex-wrap: wrap;
@@ -59,7 +60,27 @@
 }
 
 @media (max-width: 768px) {
+  .ted-organisers-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns grid */
+    gap: 16px;
+  }
+
   .ted-image-card {
-    width: calc(100% - 16px); /* One card per row on small screens */
+    width: 100%; /* Make each card take full width within the grid */
+    height: auto; /* Adjust the height to auto */
+  }
+}
+
+@media (max-width: 480px) {
+  .ted-organisers-container {
+    display: grid;
+    grid-template-columns: 1fr; /* Two columns grid */
+    gap: 16px;
+  }
+
+  .ted-image-card {
+    width: 100%; /* Full width */
+    height: 350px;
   }
 }
