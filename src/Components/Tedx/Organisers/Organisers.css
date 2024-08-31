@@ -8,7 +8,7 @@
 .ted-image-card {
   width: calc(33.333% - 16px); /* Three cards per row */
   max-width: 400px; /* Limit the maximum size of each card */
-  height: auto; /* Let the height be dynamic */
+  height: 450px; /* Let the height be dynamic */
   position: relative;
   transition: transform 0.4s ease-in;
   overflow: hidden;
@@ -37,7 +37,7 @@
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 60px;
+  height: 100px;
   background-color: rgba(0, 0, 0, 0.6);
   color: #fff;
   display: flex;
