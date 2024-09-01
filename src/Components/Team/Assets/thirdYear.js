@@ -247,4 +247,19 @@ export const thirdYear = [
         "instaLink": "",
         "linkedinLink": "https://www.linkedin.com/in/uday-bhaskar-478392264",
     },
+    {
+        "url": require("../Assets/3rdYearImg/Indrajit Das.jpg"),
+        "name": "Indrajit Das",
+        "position": "Senior Coordinator",
+        "instaLink": "https://www.instagram.com/__dreeze?igsh=MWZzbzVmMWhkbms1bA==",
+        "linkedinLink": "https://www.linkedin.com/in/indrajit-das-321440245/",
+    },
+    {
+        "url": require("../Assets/3rdYearImg/Arjya Dutta.jpg"),
+        "name": "Arjya Dutta",
+        "position": "Senior Coordinator",
+        "instaLink": "https://www.instagram.com/10_arjya_d?igsh=MWtpZW5vNmN6bDNkdw==",
+        "linkedinLink": "https://www.linkedin.com/in/arjya-dutta-356449275/",
+    },
+    
 ]
