@@ -46,7 +46,7 @@ const HomePage = () => {
           <div className="homsubheading">
             <h2>We are present at</h2>
             <p>
-              Various events and fests and numerous competitions and projects, we are not tired but enthusiast enough to achieve the sky
+            Various events, fests, competitions, and projects, fueled by boundless enthusiasm and an unwavering ambition to achieve great heights.
             </p>
           </div>
 
@@ -177,7 +177,7 @@ const HomePage = () => {
             <div className="homabout-fist" data-aos="fade-up-left">
               <h1 data-aos="fade-right">F.I.S.T</h1>
               <p>
-                Team SAE NIT Durgapur's "Forum for Ideas on Science and Technology" (F.I.S.T.) fosters a research-oriented culture through webinars and workshops on advanced topics like generative AI. By inviting experts, FIST bridges knowledge gaps, stimulates innovation, and empowers students to develop technology-driven solutions to real-world challenges.
+                Team SAE-NITD's "Forum for Ideas on Science and Technology" (F.I.S.T.) fosters a research-oriented culture through webinars and workshops on advanced topics like generative AI. By inviting experts, FIST bridges knowledge gaps, stimulates innovation, and empowers students to develop technology-driven solutions to real-world challenges.
               </p>
             </div>
           </div>
