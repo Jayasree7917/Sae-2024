@@ -3,9 +3,11 @@ import "./TypeJs.css"; // Import the CSS styles
 
 const TypeJs = () => {
   const [displayedText, setDisplayedText] = useState("");
-  const [counter, setCounter] = useState(0); // Start counter at 0 instead of -1
+  const [counter, setCounter] = useState(0); // Start counter at 0
   const text = "We are the Society of Automotive Engineers Collegiate Club of National Institute of Technology Durgapur";
   const intervalRef = useRef(null);
+
+  const typingSpeed = 75; // Typing speed in milliseconds
 
   useEffect(() => {
     const typeJs = () => {
@@ -22,11 +24,11 @@ const TypeJs = () => {
     };
 
     // Set up the interval for typing
-    intervalRef.current = setInterval(typeJs, 100);
+    intervalRef.current = setInterval(typeJs, typingSpeed);
 
     // Cleanup the interval on component unmount
     return () => clearInterval(intervalRef.current);
-  }, [text]);
+  }, [text, typingSpeed]); // Add typingSpeed to the dependency array
 
   return (
     <div className="hom-typeJsWrapper">

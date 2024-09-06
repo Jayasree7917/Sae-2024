@@ -82,7 +82,7 @@
   padding: 0;
   overflow: hidden;
   white-space: nowrap;
-  animation: typing 4s steps(40, end), blink 0.75s step-end infinite;
+  /* animation: typing 4s steps(40, end), blink 0.75s step-end infinite; */
   margin-bottom: 20px;
   margin-top: 0px;
 }
