@@ -25,7 +25,7 @@ const FacultyAdvisors = () => {
 
   return (
     <section className="homprops">
-      <div id="testimonial-box" className="homcontainer">
+      <div id="testimonial-box" className="homcontainer1">
         <div className="homprops-heading">
           <h1 className="p-3 font-bold">Our Faculty Advisors</h1>
         </div>
