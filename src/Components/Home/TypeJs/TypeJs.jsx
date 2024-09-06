@@ -3,22 +3,18 @@ import "./TypeJs.css"; // Import the CSS styles
 
 const TypeJs = () => {
   const [displayedText, setDisplayedText] = useState("");
-  const [counter, setCounter] = useState(0); // Start counter at 0 instead of -1
+  const [counter, setCounter] = useState(0); // Initialize the counter at 0
   const text = "We are the Society of Automotive Engineers Collegiate Club of National Institute of Technology Durgapur";
   const intervalRef = useRef(null);
 
   useEffect(() => {
     const typeJs = () => {
-      // Check if counter is less than text length
-      setCounter((prevCounter) => {
-        if (prevCounter < text.length) {
-          setDisplayedText((prevText) => prevText + text.charAt(prevCounter)); // Add character to text
-          return prevCounter + 1;
-        } else {
-          clearInterval(intervalRef.current); // Stop interval once text is fully typed
-          return prevCounter;
-        }
-      });
+      if (counter < text.length) {
+        setDisplayedText((prev) => prev + text.charAt(counter)); // Add the next character
+        setCounter((prev) => prev + 1); // Move to the next character
+      } else {
+        clearInterval(intervalRef.current); // Clear the interval when typing is complete
+      }
     };
 
     // Set up the interval for typing
@@ -26,11 +22,11 @@ const TypeJs = () => {
 
     // Cleanup the interval on component unmount
     return () => clearInterval(intervalRef.current);
-  }, [text]);
+  }, [counter, text]);
 
   return (
     <div className="hom-typeJsWrapper">
-      <div className="hom-container mx-auto">
+      <div className="hom-container">
         <p className="hom-typeJsText">{displayedText}</p>
       </div>
     </div>

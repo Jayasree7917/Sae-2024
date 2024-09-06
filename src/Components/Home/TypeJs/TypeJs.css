@@ -1,30 +1,29 @@
 /* TypeJs styles */
 .hom-typeJsWrapper {
-    padding: 17px;
-  }
-  
-  .hom-typeJsWrapper .hom-container {
-    text-align: center;
-  }
-  
-  .hom-typeJsText {
-    font-size: 1.6rem;
-    color: #b8bec4;
-    line-height: 1.5;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    text-align: center;
-    width: 100vw;
-    box-sizing: border-box;
-    max-width: 700px;
-    margin: 10px auto;
-  }
-  
+  padding: 17px;
+}
 
-  @media (max-width: 480px) {
-    .hom-typeJsText {
-      font-size: 21px;
-      white-space: normal;
-      word-break: break-word;
-      overflow-wrap: break-word;
-    }
+.hom-typeJsWrapper .hom-container {
+  text-align: center;
+}
+
+.hom-typeJsText {
+  font-size: 1.6rem;
+  color: #b8bec4;
+  line-height: 1.5;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  text-align: center;
+  width: 100vw;
+  box-sizing: border-box;
+  max-width: 700px;
+  margin: 10px auto;
+}
+
+@media (max-width: 480px) {
+  .hom-typeJsText {
+    font-size: 21px;
+    white-space: normal;
+    word-break: break-word;
+    overflow-wrap: break-word;
   }
+}
