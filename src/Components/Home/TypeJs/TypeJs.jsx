@@ -30,7 +30,7 @@ const TypeJs = () => {
 
   return (
     <div className="hom-typeJsWrapper">
-      <div className="hom-container">
+      <div className="hom-container mx-auto">
         <p className="hom-typeJsText">{displayedText}</p>
       </div>
     </div>
