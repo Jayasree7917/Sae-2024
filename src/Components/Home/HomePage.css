@@ -112,18 +112,6 @@
   }
 }
 
-
-.homheading p {
-  font-size: 1.6rem;
-  color: #b8bec4;
-  line-height: 1.5;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  text-align: center;
-  width: 100vw;
-  box-sizing: border-box;
-  max-width: 700px;
-  margin: 10px auto;
-}
 @media (max-width: 1280px) {
   .homaiml-image img{
     width: auto;
@@ -138,13 +126,6 @@
 @media (max-width: 480px) {
   .homheading h1 {
     font-size: 15vw;
-  }
-
-  .homheading p {
-    font-size: 21px;
-    white-space: normal;
-    word-break: break-word;
-    overflow-wrap: break-word;
   }
 }
 

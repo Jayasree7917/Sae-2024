@@ -10,7 +10,7 @@ import ReactPlayer from 'react-player';
 import AOS from 'aos'
 import 'aos/dist/aos.css'
 import { motion } from 'framer-motion'
-
+import TypeJs from './TypeJs/TypeJs';
 
 AOS.init({
   duration: 500,
@@ -34,7 +34,8 @@ const HomePage = () => {
           </div>
           <div className="homheading">
             <h1>SAENITD</h1>
-            <p>We are the Society of Automotive Engineers Collegiate Club of National Institute of Technology Durgapur</p>
+            <TypeJs />
+            {/* <p>We are the Society of Automotive Engineers Collegiate Club of National Institute of Technology Durgapur</p> */}
           </div>
         </div>
       </section>
@@ -46,7 +47,7 @@ const HomePage = () => {
           <div className="homsubheading">
             <h2>We are present at</h2>
             <p>
-            Various events, fests, competitions, and projects, fueled by boundless enthusiasm and an unwavering ambition to achieve great heights.
+              Various events, fests, competitions, and projects, fueled by boundless enthusiasm and an unwavering ambition to achieve great heights.
             </p>
           </div>
 
