@@ -11,6 +11,7 @@ import AOS from 'aos'
 import 'aos/dist/aos.css'
 import { motion } from 'framer-motion'
 import TypeJs from './TypeJs/TypeJs';
+import FacultyAdvisors from './FacultyAdvisors/FacultyAdvisors';
 
 AOS.init({
   duration: 500,
@@ -110,34 +111,8 @@ const HomePage = () => {
         </div>
       </section>
 
-      <section className="homprops">
-        <div id="testimonial-box" className="homcontainer">
-          <div className="homprops-heading" >
-            <h1 className="p-3 font-bold">Our Faculty Advisors</h1>
-          </div>
-          <div class="homhi-container">
-            <div class="homhi" data-aos="fade-right">
-              <div class="homhi-photo-niloptal"></div>
-              <div class="homhi-title">Prof. Niloptal Banerjee
-                <br />
-                <span>Department of Mechanical Engineering</span></div>
-            </div>
-            <div class="homhi" data-aos="fade-up">
-              <div class="homhi-photo-apurba"></div>
-              <div class="homhi-title">Prof. Apurba Layek
-                <br />
-                <span>Department of Mechanical Engineering</span></div>
-            </div>
-
-            <div class="homhi" data-aos="fade-left">
-              <div class="homhi-photo-tapas"></div>
-              <div class="homhi-title">Prof. Tapas Kumar Saha
-                <br />
-                <span>Department of Electrical Engineering</span></div>
-            </div>
-          </div>
-        </div>
-      </section>
+     
+      <FacultyAdvisors/>
 
       <section className="homabout">
         <div id="homcontainer-fluid">

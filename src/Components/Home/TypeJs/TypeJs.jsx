@@ -7,23 +7,23 @@ const TypeJs = () => {
   const text = "We are the Society of Automotive Engineers Collegiate Club of National Institute of Technology Durgapur";
   const intervalRef = useRef(null);
 
-  const typingSpeed = 75; // Typing speed in milliseconds
+  const typingSpeed = 75; 
 
   useEffect(() => {
     const typeJs = () => {
-      // Check if counter is less than text length
+     
       setCounter((prevCounter) => {
         if (prevCounter < text.length) {
-          setDisplayedText((prevText) => prevText + text.charAt(prevCounter)); // Add character to text
+          setDisplayedText((prevText) => prevText + text.charAt(prevCounter)); 
           return prevCounter + 1;
         } else {
-          clearInterval(intervalRef.current); // Stop interval once text is fully typed
+          clearInterval(intervalRef.current); 
           return prevCounter;
         }
       });
     };
 
-    // Set up the interval for typing
+
     intervalRef.current = setInterval(typeJs, typingSpeed);
 
     // Cleanup the interval on component unmount

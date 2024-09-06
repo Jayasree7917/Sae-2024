@@ -1,0 +1,154 @@
+.homcontainer {
+  overflow-x: hidden;
+  position: relative;
+  height: 100%vh;
+  background-attachment: fixed;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  transform: scale(1);
+  transition: transform 0.5s ease;
+  background: linear-gradient(135deg, rgb(16, 16, 17), rgb(15, 14, 14));
+  background-size: 200% 200%;
+}
+
+.homprops-heading {
+  width: 100%;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.homprops-heading h1 {
+  font-size: 3rem;
+  color: rgb(235, 8, 8);
+  margin: 0;
+  padding: 0;
+  margin-bottom: 20px;
+  margin-top: 0px;
+}
+
+.homhi-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 80px;
+  justify-content: center;
+  padding: 40px;
+}
+
+.homhi {
+  --font-color: #fefefe;
+  --font-color-sub: #7e7e7e;
+  --bg-color: #111;
+  --main-color: #afa3a3;
+  width: 300px;
+  height: 350px;
+  background: var(--bg-color);
+  border: 2px solid var(--main-color);
+  box-shadow: 4px 4px var(--main-color);
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.homhi::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: rgba(255, 255, 255, 0.1);
+  transform: rotate(45deg);
+  transition: all 0.3s ease;
+}
+
+.homhi:hover::before {
+  animation: shine 1.5s linear;
+}
+
+@keyframes shine {
+  0% {
+    transform: rotate(45deg) translate(-100%, -100%);
+  }
+  100% {
+    transform: rotate(45deg) translate(100%, 100%);
+  }
+}
+
+.homhi-photo-niloptal,
+.homhi-photo-apurba,
+.homhi-photo-tapas {
+  transform: scale(0.35) translate(160px, 150px); /* Increased default size */
+  width: 600px;
+  height: 900px;
+  margin-left: -125px;
+  margin-top: -125px;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 30%;
+  transition: opacity 0.3s ease, filter 0.3s ease;
+}
+
+.homhi-photo-niloptal,
+.homhi-photo-apurba,
+.homhi-photo-tapas {
+  opacity: 0.85; /* Slight opacity by default */
+  filter: grayscale(20%); /* Add a subtle grayscale effect */
+}
+
+.homhi:hover .homhi-photo-niloptal,
+.homhi:hover .homhi-photo-apurba,
+.homhi:hover .homhi-photo-tapas {
+  opacity: 1; /* Remove opacity on hover */
+  filter: grayscale(0%); /* Remove grayscale on hover */
+}
+
+.homhi-title {
+  text-align: center;
+  padding: 0 4px;
+  color: rgb(230, 17, 17);
+  font-weight: bold;
+  font-size: 25px;
+  font-weight: 400;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  transition: color 0.3s ease;
+}
+.homhi-title span {
+  color: #b8bec4;
+  font-size: 21.5px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  transition: color 0.3s ease;
+}
+
+.homhi:hover .homhi-title span {
+  color: #d1d7dc;
+}
+
+/* New glowing border animation */
+.homhi:hover {
+  box-shadow: 0px 10px 20px rgba(255, 255, 255, 0.1), 0px 0px 15px rgba(255, 0, 0, 0.5);
+  transform: translateY(-5px); /* Slight lift effect */
+}
+
+/* Smooth card fade-in on load */
+.homhi {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeIn 0.8s ease forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
