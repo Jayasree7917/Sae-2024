@@ -1,17 +1,10 @@
-
-
-import React, { useEffect, useState } from 'react';
 import Lottie from 'lottie-react';
-import { scroll, animate } from 'https://cdn.skypack.dev/motion@10.13.1';
 import './HomePage.css';
 import cloudAnimation from '../../Cloud.json';
-import engineAnimation from '../../Engine1.json';
 import ReactPlayer from 'react-player';
 import AOS from 'aos'
 import 'aos/dist/aos.css'
-import { motion } from 'framer-motion'
-import TypeJs from './TypeJs/TypeJs';
-import FacultyAdvisors from './FacultyAdvisors/FacultyAdvisors';
+import React, { useState, useEffect, useRef } from "react";
 
 AOS.init({
   duration: 500,
@@ -19,100 +12,230 @@ AOS.init({
   easing: 'ease-out',
 });
 
-
 const HomePage = () => {
+  const [postIndex, setPostIndex] = useState(0);
+  const [progress, setProgress] = useState(0);
+  const progressBarRef = useRef(null);
+
+  const posts = [
+    {
+      title: "AAROHAN",
+      description: "SAE-NITD and Team Aavishkar host Aarohan, Eastern India's second-largest techno-management festival, featuring innovation, technology, and creativity through competitions and expert talks, including SAE-organised events like Flying the UAV and Roboliga",
+      imageSrc: "https://www.formula1.com/content/dam/fom-website/manual/Misc/2019-Races/Monaco2019/McLarenMonaco19.jpg.transform/9col/image.jpg",
+    },
+    {
+  
+      title: "SDV",
+      description_1: "The Self-Driving Workshop provides hands-on experience in autonomous robotics, focusing on navigation and intelligent algorithms, and teaches participants to build obstacle-sensing robots and apply theoretical knowledge in real-world scenarios.",
+      imageSrc: "https://www.formula1.com/content/dam/fom-website/sutton/2019/Hungary/Saturday/1017645792-LAT-20190803-_2ST5188.jpg.transform/9col-retina/image.jpg",
+   
+    },
+    {
+      title: "TEDx",
+      description_2: "TEDx NIT Durgapur, hosted by SAE and LC, is a renowned platform where motivational speakers share transformative experiences, inspiring students with new insights and perspectives.",
+      imageSrc: "https://www.formula1.com/content/dam/fom-website/manual/Misc/2019-Races/Austria-2019/Top3Austria2019.jpg.transform/9col-retina/image.jpg",
+ 
+    },
+  ];
+
+  const totalPosts = posts.length;
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setProgress((prev) => {
+        if (prev === 100) {
+          setPostIndex((prevIndex) => (prevIndex + 1) % totalPosts);
+          return 0;
+        }
+        return prev + 1;
+      });
+    }, 100);
+
+    return () => clearInterval(interval);
+  }, [totalPosts]);
+
+  useEffect(() => {
+    if (progressBarRef.current) {
+      progressBarRef.current.style.width = `${progress}%`;
+    }
+  }, [progress]);
+  
+
+  const handleClick = (index) => {
+    setPostIndex(index);
+    setProgress(0); // Reset progress when clicking on a post
+  };
+
   return (
     <div className="home-container">
 
       <section className="hommain">
         <div id="homparticles-js">
-          <div className="home-content">
-            <Lottie
-              animationData={engineAnimation}
-              loop={true}
-              className="homresponsive-lottie-hi"
-            />
-          </div>
-          <div className="homheading">
-            <h1>SAENITD</h1>
-            <TypeJs />
-            {/* <p>We are the Society of Automotive Engineers Collegiate Club of National Institute of Technology Durgapur</p> */}
-          </div>
+            <div className="homcarousel">
+              <div className="homprogress-bar homprogress-bar--primary homhide-on-desktop">
+                <div ref={progressBarRef} className="homprogress-bar__fill"></div>
+              </div>
+
+              <header className="hommain-post-wrapper">
+                <div className="homslides">
+                  {posts.map((post, index) => (
+                    <article
+                      key={index}
+                      className={`hommain-post ${
+                        index === postIndex ? "hommain-post--active" : "hommain-post--not-active"
+                      }`}
+                    >
+                      <div className="hommain-post__image">
+                        <img src={post.imageSrc} alt={post.title} loading="lazy" className="hom"/>
+                      </div>
+                      <div className="hommain-post__content">
+                        <div className="hommain-post__tag-wrapper">
+                          <span className="hommain-post__tag">{post.tag}</span>
+                        </div>
+                       
+                        <a className="hommain-post__link" href={post.url || "#"} aria-label={post.type}>
+                          <span className="hommain-post__link-text">{post.type}</span>
+                          <svg
+                            className={`hommain-post__link-icon ${
+                              post.type === "play video"
+                                ? "hommain-post__link-icon--play-btn"
+                                : "hommain-post__link-icon--arrow"
+                            }`}
+                            width={post.type === "play video" ? "30" : "37"}
+                            height={post.type === "play video" ? "30" : "12"}
+                            viewBox="0 0 37 12"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                            role="img"
+                            aria-label={post.type === "play video" ? "Play Video Icon" : "Arrow Icon"}
+                          >
+                            {/* Include your SVG <path> data here */}
+                          </svg>
+                        </a>
+
+                      </div>
+                    </article>
+                  ))}
+                </div>
+              </header>
+
+              <div className="homposts-wrapper hide-on-mobile">
+                {posts.map((post, index) => (
+                  <article
+                    key={index}
+                    className={`hompost ${index === postIndex ? "hompost--active" : ""}`}
+                    onClick={() => handleClick(index)}
+                  >
+
+                               
+                     <h3 className="hompost__title">{post.title}</h3>
+                     <p className="hompost__description">{post.description}</p>
+                     <p className="hompost__description_1">{post.description_1}</p>
+                     <p className="hompost__description_2">{post.description_2}</p>
+                  </article>
+                ))}
+              </div>
+
+              </div>
+              <div className="homheading">
+                <h1>SAENITD</h1>
+                <p>We are the Society of Automotive Engineers Collegiate Club of National Institute of Technology Durgapur</p>
+              </div>
         </div>
       </section>
 
       <div className="homanimated-line"></div>
 
       <section className="homboxes">
-        <div id="testimonial-box" className="homcontainer">
-          <div className="homsubheading">
-            <h2>We are present at</h2>
-            <p>
-              Various events, fests, competitions, and projects, fueled by boundless enthusiasm and an unwavering ambition to achieve great heights.
-            </p>
-          </div>
+      <div id="testimonial-box" className="homcontainer">
+        <div className="homsubheading">
+          <h2>We are present at</h2>
+          <p>
+            Various events and fests and numerous competitions and projects, we are not tires but enthusiast enough to achieve the sky
+          </p>
+        </div>
+        <div className="homcard-container" max-auto>
 
-          <div className="homcard-container mx-auto">
-            <div className="homcard">
-              <div className="homcontent">
-                <div className="homback">
-                  <div className="homback-content">
-                    <h2>TEDx</h2>
-                    <br />
-                    <strong>International Event</strong>
-                  </div>
-                </div>
-                <div className="homfront">
-                  <div className="homfront-content">
-                    <div className="homtitle-1">
-                      The TEDx event, hosted at NIT Durgapur annually by SAE in partnership with LC, is a globally recognized platform where motivational speakers share their transformative experiences, inspiring students to expand their worldview and ignite their passions, providing actionable insights and fresh outlooks
-                    </div>
-                  </div>
-                </div>
-              </div>
+        <div className="homcard-aar" data-aos="fade-right">
+          <div className="homwrapper">
+            <img
+              src="https://github.com/Suke2004/Birthday-django-/blob/main/aarohan_2.jpg?raw=true"
+              className="homcover-image-aarohan"
+              alt="Aarohan"
+            />
+          </div>
+          
+          <img
+            src="https://github.com/Suke2004/Birthday-django-/blob/main/aar.jpg?raw=true"
+            className="homcharacter-aar"
+            alt="Dark Rider Character"
+          />
+        </div>
+
+        <div className="homcard-sdv" data-aos="fade-up">
+          <div className="homwrapper">
+            <img
+              src="https://github.com/Suke2004/Birthday-django-/blob/main/IMG-20240907-WA0000.jpg?raw=true"
+              className="homcover-image-sdv"
+              alt="Force Mage Cover"
+            />
+          </div>
+          <img
+            src="https://github.com/Suke2004/Birthday-django-/blob/main/bot.png?raw=true"
+            className="homcharacter"
+            alt="Force Mage Character"
+          />
+        </div>
+
+        <div className="homcard-tedx" data-aos="fade-left">
+          <div className="homwrapper">
+            <img
+              src="https://ggayane.github.io/css-experiments/cards/force_mage-cover.jpg"
+              className="homcover-image-tedx"
+              alt="Force Mage Cover"
+            />
+          </div>
+    
+          <img
+            src="https://ggayane.github.io/css-experiments/cards/force_mage-character.webp"
+            className="homcharacter"
+            alt="Force Mage Character"
+          />
+        </div>
+
+    </div>
+
+      </div>
+    </section>
+
+      <section className="homprops">
+        <div id="testimonial-box" className="homcontainer">
+          <div className="homprops-heading" >
+            <h1 className="p-3 font-bold">Our Faculty Advisors</h1>
+          </div>
+          <div class="homhi-container">
+            <div class="homhi" data-aos="fade-right">
+              <div class="homhi-photo-niloptal"></div>
+              <div class="homhi-title">Prof. Niloptal Banerjee
+                <br />
+                <span>Department of Mechanical Engineering</span></div>
             </div>
-            <div className="homcard">
-              <div className="homcontent">
-                <div className="homback">
-                  <div className="homback-content">
-                    <h2>SDV</h2>
-                    <br />
-                    <strong>Flagship Event</strong>
-                  </div>
-                </div>
-                <div className="homfront">
-                  <div className="homfront-content">
-                    <div className="homtitle-2">
-                      The Self-Driving Workshop offers a practical learning experience in autonomous robotics and self-driving technology, focusing on robotic navigation and intelligent algorithms, and equips participants with the skills to build obstacle-sensing robots and apply theoretical knowledge in real-world scenarios
-                    </div>
-                  </div>
-                </div>
-              </div>
+            <div class="homhi" data-aos="fade-up">
+              <div class="homhi-photo-apurba"></div>
+              <div class="homhi-title">Prof. Apurba Layek
+                <br />
+                <span>Department of Mechanical Engineering</span></div>
             </div>
-            <div className="homcard">
-              <div className="homcontent">
-                <div className="homback">
-                  <div className="homback-content">
-                    <h2>Aarohan</h2>
-                    <br />
-                    <strong>Annual Fest</strong>
-                  </div>
-                </div>
-                <div className="homfront">
-                  <div className="homfront-content">
-                    <div className="homtitle-3">
-                      SAE-NITD and Team Aavishkar host Aarohan, Eastern India's second-largest techno-management festival, featuring innovation, technology, and creativity through competitions and expert talks, including SAE-organised events like Flying the UAV and Roboliga
-                    </div>
-                  </div>
-                </div>
-              </div>
+
+            <div class="homhi" data-aos="fade-left">
+              <div class="homhi-photo-tapas"></div>
+              <div class="homhi-title">Prof. Tapas Kumar Saha
+                <br />
+                <span>Department of Electrical Engineering</span></div>
             </div>
           </div>
         </div>
       </section>
-
-     
-      <FacultyAdvisors/>
 
       <section className="homabout">
         <div id="homcontainer-fluid">
@@ -146,14 +269,14 @@ const HomePage = () => {
             <div className="homfist-image ">
               <img className='pt-14 flex justify-center items-center'
                 src="https://github.com/Suke2004/Birthday-django-/blob/main/IMG-20240821-WA0048.jpg?raw=true"
-                alt="Image"
+                alt="img"
                 data-aos="fade-right"
               />
             </div>
             <div className="homabout-fist" data-aos="fade-up-left">
               <h1 data-aos="fade-right">F.I.S.T</h1>
               <p>
-                Team SAE-NITD's "Forum for Ideas on Science and Technology" (F.I.S.T.) fosters a research-oriented culture through webinars and workshops on advanced topics like generative AI. By inviting experts, FIST bridges knowledge gaps, stimulates innovation, and empowers students to develop technology-driven solutions to real-world challenges.
+                Team SAE NIT Durgapur's "Forum for Ideas on Science and Technology" (F.I.S.T.) fosters a research-oriented culture through webinars and workshops on advanced topics like generative AI. By inviting experts, FIST bridges knowledge gaps, stimulates innovation, and empowers students to develop technology-driven solutions to real-world challenges.
               </p>
             </div>
           </div>
@@ -171,7 +294,7 @@ const HomePage = () => {
             <div className="hombaja-image">
               <img
                 src="https://saenitdgp-self.vercel.app/static/media/fullvehicle.72e6f860c848885980de.png"
-                alt="Image"
+                alt="img"
                 data-aos="fade-left"
               />
             </div>
@@ -184,7 +307,7 @@ const HomePage = () => {
             <div className="homaiml-image">
               <img className='pt-6 flex justify-center items-center'
                 src="https://github.com/Suke2004/Birthday-django-/blob/main/IMG-20240821-WA0076.jpg?raw=true"
-                alt="Image"
+                alt="img"
                 data-aos="fade-right"
               />
             </div>
